@@ -1,5 +1,9 @@
 import { createClient } from '@libsql/client';
-import { drizzle as drizzleLibsql } from 'drizzle-orm/libsql';
+import { join } from 'node:path';
+import {
+  drizzle as drizzleLibsql,
+  type LibSQLDatabase,
+} from 'drizzle-orm/libsql';
 import * as schema from './schema';
 
 const tursoUrl = process.env.TURSO_DATABASE_URL;
@@ -11,10 +15,16 @@ export const db = tursoUrl
       { schema },
     )
   : (() => {
-      const { join } = require('path');
-      const Database = require('better-sqlite3');
-      const { drizzle } = require('drizzle-orm/better-sqlite3');
+      // require() so better-sqlite3 isn't loaded when TURSO_* is set (e.g. Vercel)
+      /* eslint-disable @typescript-eslint/no-require-imports */
+      const Database =
+        require('better-sqlite3') as typeof import('better-sqlite3');
+      const { drizzle } =
+        require('drizzle-orm/better-sqlite3') as typeof import('drizzle-orm/better-sqlite3');
+      /* eslint-enable @typescript-eslint/no-require-imports */
       const dbPath =
         process.env.DATABASE_PATH ?? join(process.cwd(), 'db', 'local.sqlite');
-      return drizzle(new Database(dbPath), { schema });
+      return drizzle(new Database(dbPath), {
+        schema,
+      }) as unknown as LibSQLDatabase<typeof schema>;
     })();
