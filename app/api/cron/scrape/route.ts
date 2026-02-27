@@ -5,7 +5,7 @@ import { runScraper } from '@/lib/scraper/run';
 
 const CRON_SECRET = process.env.CRON_SECRET;
 
-export const maxDuration = 10;
+export const maxDuration = 60;
 export const dynamic = 'force-dynamic';
 
 function checkAuth(request: Request): boolean {
