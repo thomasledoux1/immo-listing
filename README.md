@@ -75,10 +75,14 @@ Set `CRON_SECRET` in your environment. On **Vercel**, the route uses [@sparticuz
 
 ## Database
 
-- **SQLite** file: `db/local.sqlite` (override with `DATABASE_PATH`).
-- **Tables:** `agencies` (20 Ghent agencies + scraper config), `listings` (url, price, bedrooms, surface, garden, first_seen_at, last_seen_at, deleted_at).
-- **Soft delete:** Listings you delete in the UI are marked with `deleted_at` and no longer shown. The scraper does not re-add or update them, so they stay hidden.
-- **Drizzle:** `npm run db:generate`, `npm run db:push`, `npm run db:studio`.
+- **Local:** SQLite file `db/local.sqlite` (override with `DATABASE_PATH`). Used when `TURSO_DATABASE_URL` is not set.
+- **Production (Vercel):** Set **Turso** env vars so the app uses your remote DB:
+  - `TURSO_DATABASE_URL` – e.g. `libsql://your-db.your-region.turso.io`
+  - `TURSO_AUTH_TOKEN` – create with `turso db tokens create your-db-name`
+  - In Vercel: Project → Settings → Environment Variables. Add both for Production (and Preview if you want).
+- **Tables:** `agencies`, `listings` (url, price, bedrooms, surface, garden, first_seen_at, last_seen_at, deleted_at).
+- **Soft delete:** Listings you delete in the UI are marked with `deleted_at` and no longer shown. The scraper does not re-add or update them.
+- **Drizzle:** `npm run db:generate`, `npm run db:push`, `npm run db:studio`. With `TURSO_DATABASE_URL` and `TURSO_AUTH_TOKEN` set, `db:push` applies to Turso.
 
 ## Project layout
 

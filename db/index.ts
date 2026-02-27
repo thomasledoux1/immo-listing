@@ -1,9 +1,20 @@
-import { join } from "path";
-import Database from "better-sqlite3";
-import { drizzle } from "drizzle-orm/better-sqlite3";
-import * as schema from "./schema";
+import { createClient } from '@libsql/client';
+import { drizzle as drizzleLibsql } from 'drizzle-orm/libsql';
+import * as schema from './schema';
 
-const dbPath =
-  process.env.DATABASE_PATH ?? join(process.cwd(), "db", "local.sqlite");
-const sqlite = new Database(dbPath);
-export const db = drizzle(sqlite, { schema });
+const tursoUrl = process.env.TURSO_DATABASE_URL;
+const tursoToken = process.env.TURSO_AUTH_TOKEN;
+
+export const db = tursoUrl
+  ? drizzleLibsql(
+      createClient({ url: tursoUrl, authToken: tursoToken ?? undefined }),
+      { schema },
+    )
+  : (() => {
+      const { join } = require('path');
+      const Database = require('better-sqlite3');
+      const { drizzle } = require('drizzle-orm/better-sqlite3');
+      const dbPath =
+        process.env.DATABASE_PATH ?? join(process.cwd(), 'db', 'local.sqlite');
+      return drizzle(new Database(dbPath), { schema });
+    })();
