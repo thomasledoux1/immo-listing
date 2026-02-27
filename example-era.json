@@ -1,0 +1,515 @@
+{
+"jsonapi": {
+"version": "1.0",
+"meta": {
+"links": {
+"self": {
+"href": "http://jsonapi.org/format/1.0/"
+}
+}
+}
+},
+"data": [
+{
+"type": "node--property",
+"id": "6070876",
+"attributes": {
+"teaser": "\n\n\n  \n          \n  \n          \n<article  class=\"node node--view-mode-teaser node--property node--property--teaser js-fully-clickable property--teaser\" about=\"/nl/te-koop/desteldonk/huis/energiezuinige-woonst-met-zuid-gerichte-tuin-epc-a\">\n  \n      \n\n\n\n\n    \n\n  \n  \n    <div  class=\"node__content node__content--view-mode-teaser node__content--property node__content--property--teaser\">\n          \n<div  class=\"property-teaser__media\">\n    \n\n\n  \n      \n\n  \n\n\n<div  class=\"field field--name-field-images field--type-entity-reference field--label-hidden field-images teaser-images-slider\">\n\n  <div class=\"slick-navigation\"></div>\n\n              <div class=\"teaser-images-slider__item\">\n        \n\n        \n\n<article  class=\"media media--type-migrated-image media--view-mode-image-4-3\" >\n  \n        \n\n\n\n\n      \n\n  \n\n<div  class=\"field field--image field--name-field-media-image field--type-image field--label-visually_hidden field-media-image\">\n            \n                  \n                                                              \n      \n            \n                                          \n\n\n  \n\n\n  \n\n\n<picture\n   class=\"picture lazy-wrapper\" width=\"1024\" height=\"768\"\n  >\n          <!--[if IE 9]><video style=\"display: none;\"><![endif]-->\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_lg/public/eraforce/images/property/00PTt00000TWGwzMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=6eb229a4&amp;itok=3Fk9VvpW 1x, /sites/default/files/styles/image_style_4_3_landscape_lg_2x/public/eraforce/images/property/00PTt00000TWGwzMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=6eb229a4&amp;itok=HXppaD1z 2x\" media=\"all and (min-width: 1200px)\" type=\"image/jpeg\" width=\"1200\" height=\"900\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000TWGwzMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=6eb229a4&amp;itok=vW03AgM4 1x, /sites/default/files/styles/image_style_4_3_landscape_md_2x/public/eraforce/images/property/00PTt00000TWGwzMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=6eb229a4&amp;itok=oRNWCd4P 2x\" media=\"all and (min-width: 940px)\" type=\"image/jpeg\" width=\"1024\" height=\"768\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_sm/public/eraforce/images/property/00PTt00000TWGwzMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=6eb229a4&amp;itok=Qu4UKv86 1x, /sites/default/files/styles/image_style_4_3_landscape_sm_2x/public/eraforce/images/property/00PTt00000TWGwzMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=6eb229a4&amp;itok=InpEyln0 2x\" media=\"all and (min-width: 768px)\" type=\"image/jpeg\" width=\"768\" height=\"576\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_xs_wide/public/eraforce/images/property/00PTt00000TWGwzMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=6eb229a4&amp;itok=FMFu69w8 1x, /sites/default/files/styles/image_style_4_3_landscape_xs_wide_2x/public/eraforce/images/property/00PTt00000TWGwzMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=6eb229a4&amp;itok=3JPG1jA5 2x\" type=\"image/jpeg\" width=\"480\" height=\"360\"/>\n        <!--[if IE 9]></video><![endif]-->\n      \n\n\n\n  \n\n<img\n     class=\"image\"\n\n    \n  alt=\"Rechtstraat - 68 -  - 9042\"\n  \n      loading=\"lazy\"\n          src=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000TWGwzMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=6eb229a4&amp;itok=vW03AgM4\"\n      />\n\n</picture>\n\n\n\n\n\n\n                    </div>\n\n    </article>\n\n\n              </div>\n\n          <div class=\"teaser-images-slider__item\">\n        \n\n        \n\n<article  class=\"media media--type-migrated-image media--view-mode-image-4-3\" >\n  \n        \n\n\n\n\n      \n\n  \n\n<div  class=\"field field--image field--name-field-media-image field--type-image field--label-visually_hidden field-media-image\">\n            \n                  \n                                                              \n      \n            \n                                          \n\n\n  \n\n\n  \n\n\n<picture\n   class=\"picture lazy-wrapper\" width=\"1024\" height=\"768\"\n  >\n          <!--[if IE 9]><video style=\"display: none;\"><![endif]-->\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_lg/public/eraforce/images/property/00PTt00000TWBCYMA5Rechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=Fi1zTP-u 1x, /sites/default/files/styles/image_style_4_3_landscape_lg_2x/public/eraforce/images/property/00PTt00000TWBCYMA5Rechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=Mudq-5Tc 2x\" media=\"all and (min-width: 1200px)\" type=\"image/jpeg\" width=\"1200\" height=\"900\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000TWBCYMA5Rechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=8ZmlEKsN 1x, /sites/default/files/styles/image_style_4_3_landscape_md_2x/public/eraforce/images/property/00PTt00000TWBCYMA5Rechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=Ummu2tCK 2x\" media=\"all and (min-width: 940px)\" type=\"image/jpeg\" width=\"1024\" height=\"768\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_sm/public/eraforce/images/property/00PTt00000TWBCYMA5Rechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=HcpQPhHU 1x, /sites/default/files/styles/image_style_4_3_landscape_sm_2x/public/eraforce/images/property/00PTt00000TWBCYMA5Rechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=EAaKwW3A 2x\" media=\"all and (min-width: 768px)\" type=\"image/jpeg\" width=\"768\" height=\"576\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_xs_wide/public/eraforce/images/property/00PTt00000TWBCYMA5Rechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=-WCRzYze 1x, /sites/default/files/styles/image_style_4_3_landscape_xs_wide_2x/public/eraforce/images/property/00PTt00000TWBCYMA5Rechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=ImWnUKbh 2x\" type=\"image/jpeg\" width=\"480\" height=\"360\"/>\n        <!--[if IE 9]></video><![endif]-->\n      \n\n\n\n  \n\n<img\n     class=\"image\"\n\n    \n  alt=\"Rechtstraat - 68 -  - 9042\"\n  \n      loading=\"lazy\"\n          src=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000TWBCYMA5Rechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=8ZmlEKsN\"\n      />\n\n</picture>\n\n\n\n\n\n\n                    </div>\n\n    </article>\n\n\n              </div>\n\n          <div class=\"teaser-images-slider__item\">\n        \n\n        \n\n<article  class=\"media media--type-migrated-image media--view-mode-image-4-3\" >\n  \n        \n\n\n\n\n      \n\n  \n\n<div  class=\"field field--image field--name-field-media-image field--type-image field--label-visually_hidden field-media-image\">\n            \n                  \n                                                              \n      \n            \n                                          \n\n\n  \n\n\n  \n\n\n<picture\n   class=\"picture lazy-wrapper\" width=\"1024\" height=\"768\"\n  >\n          <!--[if IE 9]><video style=\"display: none;\"><![endif]-->\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_lg/public/eraforce/images/property/00PTt00000TWFrFMAXRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=awYkaEbK 1x, /sites/default/files/styles/image_style_4_3_landscape_lg_2x/public/eraforce/images/property/00PTt00000TWFrFMAXRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=jhS2yZPD 2x\" media=\"all and (min-width: 1200px)\" type=\"image/jpeg\" width=\"1200\" height=\"900\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000TWFrFMAXRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=ZXMhiior 1x, /sites/default/files/styles/image_style_4_3_landscape_md_2x/public/eraforce/images/property/00PTt00000TWFrFMAXRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=5DYrqRyp 2x\" media=\"all and (min-width: 940px)\" type=\"image/jpeg\" width=\"1024\" height=\"768\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_sm/public/eraforce/images/property/00PTt00000TWFrFMAXRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=hbE7tmUF 1x, /sites/default/files/styles/image_style_4_3_landscape_sm_2x/public/eraforce/images/property/00PTt00000TWFrFMAXRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=VjTbniH4 2x\" media=\"all and (min-width: 768px)\" type=\"image/jpeg\" width=\"768\" height=\"576\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_xs_wide/public/eraforce/images/property/00PTt00000TWFrFMAXRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=IXD0McQh 1x, /sites/default/files/styles/image_style_4_3_landscape_xs_wide_2x/public/eraforce/images/property/00PTt00000TWFrFMAXRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=2QOG7qqZ 2x\" type=\"image/jpeg\" width=\"480\" height=\"360\"/>\n        <!--[if IE 9]></video><![endif]-->\n      \n\n\n\n  \n\n<img\n     class=\"image\"\n\n    \n  alt=\"Rechtstraat - 68 -  - 9042\"\n  \n      loading=\"lazy\"\n          src=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000TWFrFMAXRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=ZXMhiior\"\n      />\n\n</picture>\n\n\n\n\n\n\n                    </div>\n\n    </article>\n\n\n              </div>\n\n          <div class=\"teaser-images-slider__item\">\n        \n\n        \n\n<article  class=\"media media--type-migrated-image media--view-mode-image-4-3\" >\n  \n        \n\n\n\n\n      \n\n  \n\n<div  class=\"field field--image field--name-field-media-image field--type-image field--label-visually_hidden field-media-image\">\n            \n                  \n                                                              \n      \n            \n                                          \n\n\n  \n\n\n  \n\n\n<picture\n   class=\"picture lazy-wrapper\" width=\"1024\" height=\"768\"\n  >\n          <!--[if IE 9]><video style=\"display: none;\"><![endif]-->\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_lg/public/eraforce/images/property/00PTt00000TWFsrMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=1YFHM8_x 1x, /sites/default/files/styles/image_style_4_3_landscape_lg_2x/public/eraforce/images/property/00PTt00000TWFsrMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=wYcs9-jL 2x\" media=\"all and (min-width: 1200px)\" type=\"image/jpeg\" width=\"1200\" height=\"900\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000TWFsrMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=awlqRl_1 1x, /sites/default/files/styles/image_style_4_3_landscape_md_2x/public/eraforce/images/property/00PTt00000TWFsrMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=ezcHfOz0 2x\" media=\"all and (min-width: 940px)\" type=\"image/jpeg\" width=\"1024\" height=\"768\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_sm/public/eraforce/images/property/00PTt00000TWFsrMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=y9SCWpjJ 1x, /sites/default/files/styles/image_style_4_3_landscape_sm_2x/public/eraforce/images/property/00PTt00000TWFsrMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=b5NF1NY6 2x\" media=\"all and (min-width: 768px)\" type=\"image/jpeg\" width=\"768\" height=\"576\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_xs_wide/public/eraforce/images/property/00PTt00000TWFsrMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=fbqezOuz 1x, /sites/default/files/styles/image_style_4_3_landscape_xs_wide_2x/public/eraforce/images/property/00PTt00000TWFsrMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=yqbblIiP 2x\" type=\"image/jpeg\" width=\"480\" height=\"360\"/>\n        <!--[if IE 9]></video><![endif]-->\n      \n\n\n\n  \n\n<img\n     class=\"image\"\n\n    \n  alt=\"Rechtstraat - 68 -  - 9042\"\n  \n      loading=\"lazy\"\n          src=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000TWFsrMAHRechtstraat%20-%2068%20-%20%20-%209042.jpeg?h=10d202d3&amp;itok=awlqRl_1\"\n      />\n\n</picture>\n\n\n\n\n\n\n                    </div>\n\n    </article>\n\n\n                  <span class=\"view-more-link\">\n            Toon meer\n          </span>\n              </div>\n\n      </div>\n<div class=\"campaign-field--flag brand-color--red\">In optie</div>\n<div class=\"field field--era-favorite-toggle\" data-nid=\"6070876\"><span title=\"Aan favorieten toevoegen\" class=\"favorite-toggle__icon js-favorite-toggle\" data-nid=\"6070876\" data-title_inactive=\"Aan favorieten toevoegen\" data-title_active=\"Uit favorieten verwijderen\"></span>\n</div>\n\n  </div>\n<div  class=\"property-teaser__content\">\n      \n\n\n  \n      \n\n  \n\n<div  class=\"field field--name-title field--type-string field--label-hidden title\">\n        \n                                        \n                      <h3>ENERGIEZUINIGE WOONST MET ZUID-GERICHTE TUIN (EPC-A)</h3>\n                                      </div>\n<div class=\"field field--price on-demand\">Prijs op verzoek</div><div class=\"field field--address text--small\">Rechtstraat 68, 9042 Gent</div>\n\n<div  class=\"property-teaser__info\">\n    <div class=\"field field--icon field--bedrooms\">3 slpkr.</div>\n<div class=\"field field--icon field--habitable-space\">224 m² woonoppervlakte</div>\n<div class=\"field field--icon field--ground-share\">676 m² grondoppervlakte</div>\n<div class=\"field field--epc\"><div class=\"epc-label epc-label--a\"><span class=\"epc-label__begin\"></span>\n<span class=\"epc-label__middle\">A</span>\n<span class=\"epc-label__end\"></span>\n</div>\n</div>\n\n  </div>\n  </div>\n\n\n  \n      \n\n  \n\n<div  class=\"field field--name-field-property-display-canonical field--type-rs-display-field field--label-hidden field-property-display-canonical\">\n        \n                                        \n                      <div class=\"rs-canonical-link-formatter\">\n      <a href=\"/nl/te-koop/desteldonk/huis/energiezuinige-woonst-met-zuid-gerichte-tuin-epc-a\" aria-label=\"Lees meer over ENERGIEZUINIGE WOONST MET ZUID-GERICHTE TUIN (EPC-A)\" target=\"_blank\" hreflang=\"nl\">Pand bekijken</a>\n</div>\n\n                                      </div>\n\n      </div>\n</article>\n",
+"coordinates": {
+"lat": "51.1215474",
+"long": "3.7933601"
+},
+"video_data": {
+"field_media_video_embed_field": "https://streaming.walkly.app/4fd569ba-7b49-4e6f-b64a-66aa9f2f3ce9/playlist.m3u8",
+"title": "ENERGIEZUINIGE WOONST MET ZUID-GERICHTE TUIN (EPC-A)",
+"price": "€ 470 000",
+"location": "9042 Gent",
+"property_id": "6070876",
+"energy_label": "A",
+"property_url": "/nl/te-koop/desteldonk/huis/energiezuinige-woonst-met-zuid-gerichte-tuin-epc-a"
+}
+}
+},
+{
+"type": "node--property",
+"id": "6056158",
+"attributes": {
+"teaser": "\n\n\n  \n          \n  \n          \n<article  class=\"node node--view-mode-teaser node--property node--property--teaser js-fully-clickable property--teaser\" about=\"/nl/te-koop/desteldonk/huis/halfopen-nieuwbouwwoning-met-grote-tuin-en-inpandige-garage\">\n  \n      \n\n\n\n\n    \n\n  \n  \n    <div  class=\"node__content node__content--view-mode-teaser node__content--property node__content--property--teaser\">\n          \n<div  class=\"property-teaser__media\">\n    \n\n\n  \n      \n\n  \n\n\n<div  class=\"field field--name-field-images field--type-entity-reference field--label-hidden field-images teaser-images-slider\">\n\n  <div class=\"slick-navigation\"></div>\n\n              <div class=\"teaser-images-slider__item\">\n        \n\n        \n\n<article  class=\"media media--type-migrated-image media--view-mode-image-4-3\" >\n  \n        \n\n\n\n\n      \n\n  \n\n<div  class=\"field field--image field--name-field-media-image field--type-image field--label-visually_hidden field-media-image\">\n            \n                  \n                                                              \n      \n            \n                                          \n\n\n  \n\n\n  \n\n\n<picture\n   class=\"picture lazy-wrapper\" width=\"1024\" height=\"768\"\n  >\n          <!--[if IE 9]><video style=\"display: none;\"><![endif]-->\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_lg/public/eraforce/images/property/00PTt00000AVxFlMALDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=6eb229a4&amp;itok=pWGFubUK 1x, /sites/default/files/styles/image_style_4_3_landscape_lg_2x/public/eraforce/images/property/00PTt00000AVxFlMALDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=6eb229a4&amp;itok=B5Fa5bEO 2x\" media=\"all and (min-width: 1200px)\" type=\"image/jpeg\" width=\"1200\" height=\"900\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000AVxFlMALDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=6eb229a4&amp;itok=i5cY1Dbd 1x, /sites/default/files/styles/image_style_4_3_landscape_md_2x/public/eraforce/images/property/00PTt00000AVxFlMALDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=6eb229a4&amp;itok=RssGGezx 2x\" media=\"all and (min-width: 940px)\" type=\"image/jpeg\" width=\"1024\" height=\"768\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_sm/public/eraforce/images/property/00PTt00000AVxFlMALDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=6eb229a4&amp;itok=D2UBVdqA 1x, /sites/default/files/styles/image_style_4_3_landscape_sm_2x/public/eraforce/images/property/00PTt00000AVxFlMALDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=6eb229a4&amp;itok=F7lONiNR 2x\" media=\"all and (min-width: 768px)\" type=\"image/jpeg\" width=\"768\" height=\"576\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_xs_wide/public/eraforce/images/property/00PTt00000AVxFlMALDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=6eb229a4&amp;itok=42bZ7EhW 1x, /sites/default/files/styles/image_style_4_3_landscape_xs_wide_2x/public/eraforce/images/property/00PTt00000AVxFlMALDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=6eb229a4&amp;itok=n4fYnnnu 2x\" type=\"image/jpeg\" width=\"480\" height=\"360\"/>\n        <!--[if IE 9]></video><![endif]-->\n      \n\n\n\n  \n\n<img\n     class=\"image\"\n\n    \n  alt=\"Desteldonkstraat - 10 -  - Lot 3 - 9042\"\n  \n      loading=\"lazy\"\n          src=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000AVxFlMALDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=6eb229a4&amp;itok=i5cY1Dbd\"\n      />\n\n</picture>\n\n\n\n\n\n\n                    </div>\n\n    </article>\n\n\n              </div>\n\n          <div class=\"teaser-images-slider__item\">\n        \n\n        \n\n<article  class=\"media media--type-migrated-image media--view-mode-image-4-3\" >\n  \n        \n\n\n\n\n      \n\n  \n\n<div  class=\"field field--image field--name-field-media-image field--type-image field--label-visually_hidden field-media-image\">\n            \n                  \n                                                              \n      \n            \n                                          \n\n\n  \n\n\n  \n\n\n<picture\n   class=\"picture lazy-wrapper\" width=\"1024\" height=\"768\"\n  >\n          <!--[if IE 9]><video style=\"display: none;\"><![endif]-->\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_lg/public/eraforce/images/property/00PTt00000J5PPeMANDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=GuzuPM2X 1x, /sites/default/files/styles/image_style_4_3_landscape_lg_2x/public/eraforce/images/property/00PTt00000J5PPeMANDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=mov5Ci74 2x\" media=\"all and (min-width: 1200px)\" type=\"image/jpeg\" width=\"1200\" height=\"900\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000J5PPeMANDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=7llnWfE0 1x, /sites/default/files/styles/image_style_4_3_landscape_md_2x/public/eraforce/images/property/00PTt00000J5PPeMANDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=CVxrVEXA 2x\" media=\"all and (min-width: 940px)\" type=\"image/jpeg\" width=\"1024\" height=\"768\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_sm/public/eraforce/images/property/00PTt00000J5PPeMANDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=S15H9ay2 1x, /sites/default/files/styles/image_style_4_3_landscape_sm_2x/public/eraforce/images/property/00PTt00000J5PPeMANDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=vIn-qRV3 2x\" media=\"all and (min-width: 768px)\" type=\"image/jpeg\" width=\"768\" height=\"576\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_xs_wide/public/eraforce/images/property/00PTt00000J5PPeMANDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=sTiOlZhM 1x, /sites/default/files/styles/image_style_4_3_landscape_xs_wide_2x/public/eraforce/images/property/00PTt00000J5PPeMANDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=kWEnCY5Q 2x\" type=\"image/jpeg\" width=\"480\" height=\"360\"/>\n        <!--[if IE 9]></video><![endif]-->\n      \n\n\n\n  \n\n<img\n     class=\"image\"\n\n    \n  alt=\"Desteldonkstraat - 10 -  - Lot 3 - 9042\"\n  \n      loading=\"lazy\"\n          src=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000J5PPeMANDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=7llnWfE0\"\n      />\n\n</picture>\n\n\n\n\n\n\n                    </div>\n\n    </article>\n\n\n              </div>\n\n          <div class=\"teaser-images-slider__item\">\n        \n\n        \n\n<article  class=\"media media--type-migrated-image media--view-mode-image-4-3\" >\n  \n        \n\n\n\n\n      \n\n  \n\n<div  class=\"field field--image field--name-field-media-image field--type-image field--label-visually_hidden field-media-image\">\n            \n                  \n                                                              \n      \n            \n                                          \n\n\n  \n\n\n  \n\n\n<picture\n   class=\"picture lazy-wrapper\" width=\"1024\" height=\"768\"\n  >\n          <!--[if IE 9]><video style=\"display: none;\"><![endif]-->\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_lg/public/eraforce/images/property/00PTt00000J5OjdMAFDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=PeVCMrs9 1x, /sites/default/files/styles/image_style_4_3_landscape_lg_2x/public/eraforce/images/property/00PTt00000J5OjdMAFDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=pslTzUS7 2x\" media=\"all and (min-width: 1200px)\" type=\"image/jpeg\" width=\"1200\" height=\"900\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000J5OjdMAFDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=95ZMAk6_ 1x, /sites/default/files/styles/image_style_4_3_landscape_md_2x/public/eraforce/images/property/00PTt00000J5OjdMAFDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=vLMjmmrt 2x\" media=\"all and (min-width: 940px)\" type=\"image/jpeg\" width=\"1024\" height=\"768\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_sm/public/eraforce/images/property/00PTt00000J5OjdMAFDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=A1788Dwu 1x, /sites/default/files/styles/image_style_4_3_landscape_sm_2x/public/eraforce/images/property/00PTt00000J5OjdMAFDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=9vdVctBS 2x\" media=\"all and (min-width: 768px)\" type=\"image/jpeg\" width=\"768\" height=\"576\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_xs_wide/public/eraforce/images/property/00PTt00000J5OjdMAFDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=L6rwQZkI 1x, /sites/default/files/styles/image_style_4_3_landscape_xs_wide_2x/public/eraforce/images/property/00PTt00000J5OjdMAFDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=fSdl-EXY 2x\" type=\"image/jpeg\" width=\"480\" height=\"360\"/>\n        <!--[if IE 9]></video><![endif]-->\n      \n\n\n\n  \n\n<img\n     class=\"image\"\n\n    \n  alt=\"Desteldonkstraat - 10 -  - Lot 3 - 9042\"\n  \n      loading=\"lazy\"\n          src=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000J5OjdMAFDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=c74750f6&amp;itok=95ZMAk6_\"\n      />\n\n</picture>\n\n\n\n\n\n\n                    </div>\n\n    </article>\n\n\n              </div>\n\n          <div class=\"teaser-images-slider__item\">\n        \n\n        \n\n<article  class=\"media media--type-migrated-image media--view-mode-image-4-3\" >\n  \n        \n\n\n\n\n      \n\n  \n\n<div  class=\"field field--image field--name-field-media-image field--type-image field--label-visually_hidden field-media-image\">\n            \n                  \n                                                              \n      \n            \n                                          \n\n\n  \n\n\n  \n\n\n<picture\n   class=\"picture lazy-wrapper\" width=\"1024\" height=\"768\"\n  >\n          <!--[if IE 9]><video style=\"display: none;\"><![endif]-->\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_lg/public/eraforce/images/property/00PTt00000AnfAjMAJDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=242cd5c8&amp;itok=LupR8XEj 1x, /sites/default/files/styles/image_style_4_3_landscape_lg_2x/public/eraforce/images/property/00PTt00000AnfAjMAJDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=242cd5c8&amp;itok=w-MdeBou 2x\" media=\"all and (min-width: 1200px)\" type=\"image/jpeg\" width=\"1200\" height=\"900\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000AnfAjMAJDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=242cd5c8&amp;itok=GR-CZD6c 1x, /sites/default/files/styles/image_style_4_3_landscape_md_2x/public/eraforce/images/property/00PTt00000AnfAjMAJDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=242cd5c8&amp;itok=PbFi8ryq 2x\" media=\"all and (min-width: 940px)\" type=\"image/jpeg\" width=\"1024\" height=\"768\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_sm/public/eraforce/images/property/00PTt00000AnfAjMAJDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=242cd5c8&amp;itok=aY_u_NjV 1x, /sites/default/files/styles/image_style_4_3_landscape_sm_2x/public/eraforce/images/property/00PTt00000AnfAjMAJDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=242cd5c8&amp;itok=Hf7XnLs0 2x\" media=\"all and (min-width: 768px)\" type=\"image/jpeg\" width=\"768\" height=\"576\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_xs_wide/public/eraforce/images/property/00PTt00000AnfAjMAJDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=242cd5c8&amp;itok=arKghWnq 1x, /sites/default/files/styles/image_style_4_3_landscape_xs_wide_2x/public/eraforce/images/property/00PTt00000AnfAjMAJDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=242cd5c8&amp;itok=DP0dnqje 2x\" type=\"image/jpeg\" width=\"480\" height=\"360\"/>\n        <!--[if IE 9]></video><![endif]-->\n      \n\n\n\n  \n\n<img\n     class=\"image\"\n\n    \n  alt=\"Desteldonkstraat - 10 -  - Lot 3 - 9042\"\n  \n      loading=\"lazy\"\n          src=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000AnfAjMAJDesteldonkstraat%20-%2010%20-%20%20-%20Lot%203%20-%209042.jpeg?h=242cd5c8&amp;itok=GR-CZD6c\"\n      />\n\n</picture>\n\n\n\n\n\n\n                    </div>\n\n    </article>\n\n\n                  <span class=\"view-more-link\">\n            Toon meer\n          </span>\n              </div>\n\n      </div>\n<div class=\"field field--era-favorite-toggle\" data-nid=\"6056158\"><span title=\"Aan favorieten toevoegen\" class=\"favorite-toggle__icon js-favorite-toggle\" data-nid=\"6056158\" data-title_inactive=\"Aan favorieten toevoegen\" data-title_active=\"Uit favorieten verwijderen\"></span>\n</div>\n\n  </div>\n<div  class=\"property-teaser__content\">\n      \n\n\n  \n      \n\n  \n\n<div  class=\"field field--name-title field--type-string field--label-hidden title\">\n        \n                                        \n                      <h3>Halfopen Nieuwbouwwoning met Grote Tuin en Inpandige Garage</h3>\n                                      </div>\n<div class=\"field field--price\">€ 459 000</div>\n<div class=\"field field--address text--small\">Desteldonkstraat 10, 9042 Gent</div>\n\n<div  class=\"property-teaser__info\">\n    <div class=\"field field--icon field--bedrooms\">4 slpkr.</div>\n<div class=\"field field--icon field--habitable-space\">191 m² woonoppervlakte</div>\n<div class=\"field field--icon field--ground-share\">568 m² grondoppervlakte</div>\n\n  </div><div class=\"field field--project-part\"><a href=\"/nl/nieuwbouw/desteldonkstraat-moderne-nieuwbouwwoningen\" class=\"project-link\" hreflang=\"nl\">Deel van project Desteldonkstraat: Moderne nieuwbouwwoningen</a></div>\n\n  </div>\n\n\n  \n      \n\n  \n\n<div  class=\"field field--name-field-property-display-canonical field--type-rs-display-field field--label-hidden field-property-display-canonical\">\n        \n                                        \n                      <div class=\"rs-canonical-link-formatter\">\n      <a href=\"/nl/te-koop/desteldonk/huis/halfopen-nieuwbouwwoning-met-grote-tuin-en-inpandige-garage\" aria-label=\"Lees meer over Halfopen Nieuwbouwwoning met Grote Tuin en Inpandige Garage\" target=\"_blank\" hreflang=\"nl\">Pand bekijken</a>\n</div>\n\n                                      </div>\n\n      </div>\n</article>\n",
+"coordinates": {
+"lat": 0,
+"long": 0
+},
+"video_data": []
+}
+},
+{
+"type": "node--property",
+"id": "6056155",
+"attributes": {
+"teaser": "\n\n\n  \n          \n  \n          \n<article  class=\"node node--view-mode-teaser node--property node--property--teaser js-fully-clickable property--teaser\" about=\"/nl/te-koop/desteldonk/huis/ruime-nieuwbouwwoning-met-schitterende-tuin\">\n  \n      \n\n\n\n\n    \n\n  \n  \n    <div  class=\"node__content node__content--view-mode-teaser node__content--property node__content--property--teaser\">\n          \n<div  class=\"property-teaser__media\">\n    \n\n\n  \n      \n\n  \n\n\n<div  class=\"field field--name-field-images field--type-entity-reference field--label-hidden field-images teaser-images-slider\">\n\n  <div class=\"slick-navigation\"></div>\n\n              <div class=\"teaser-images-slider__item\">\n        \n\n        \n\n<article  class=\"media media--type-migrated-image media--view-mode-image-4-3\" >\n  \n        \n\n\n\n\n      \n\n  \n\n<div  class=\"field field--image field--name-field-media-image field--type-image field--label-visually_hidden field-media-image\">\n            \n                  \n                                                              \n      \n            \n                                          \n\n\n  \n\n\n  \n\n\n<picture\n   class=\"picture lazy-wrapper\" width=\"1024\" height=\"768\"\n  >\n          <!--[if IE 9]><video style=\"display: none;\"><![endif]-->\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_lg/public/eraforce/images/property/00PTt00000J5KFVMA3Desteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=hhj8Nsce 1x, /sites/default/files/styles/image_style_4_3_landscape_lg_2x/public/eraforce/images/property/00PTt00000J5KFVMA3Desteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=Km5xBwkP 2x\" media=\"all and (min-width: 1200px)\" type=\"image/jpeg\" width=\"1200\" height=\"900\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000J5KFVMA3Desteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=7zNM-yR9 1x, /sites/default/files/styles/image_style_4_3_landscape_md_2x/public/eraforce/images/property/00PTt00000J5KFVMA3Desteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=ThSqzBmf 2x\" media=\"all and (min-width: 940px)\" type=\"image/jpeg\" width=\"1024\" height=\"768\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_sm/public/eraforce/images/property/00PTt00000J5KFVMA3Desteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=koZXOzTC 1x, /sites/default/files/styles/image_style_4_3_landscape_sm_2x/public/eraforce/images/property/00PTt00000J5KFVMA3Desteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=sETenawA 2x\" media=\"all and (min-width: 768px)\" type=\"image/jpeg\" width=\"768\" height=\"576\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_xs_wide/public/eraforce/images/property/00PTt00000J5KFVMA3Desteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=Y2KX3Uum 1x, /sites/default/files/styles/image_style_4_3_landscape_xs_wide_2x/public/eraforce/images/property/00PTt00000J5KFVMA3Desteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=x-FpN6sD 2x\" type=\"image/jpeg\" width=\"480\" height=\"360\"/>\n        <!--[if IE 9]></video><![endif]-->\n      \n\n\n\n  \n\n<img\n     class=\"image\"\n\n    \n  alt=\"Desteldonkstraat - 10 -  - Lot 1 - 9042\"\n  \n      loading=\"lazy\"\n          src=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000J5KFVMA3Desteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=7zNM-yR9\"\n      />\n\n</picture>\n\n\n\n\n\n\n                    </div>\n\n    </article>\n\n\n              </div>\n\n          <div class=\"teaser-images-slider__item\">\n        \n\n        \n\n<article  class=\"media media--type-migrated-image media--view-mode-image-4-3\" >\n  \n        \n\n\n\n\n      \n\n  \n\n<div  class=\"field field--image field--name-field-media-image field--type-image field--label-visually_hidden field-media-image\">\n            \n                  \n                                                              \n      \n            \n                                          \n\n\n  \n\n\n  \n\n\n<picture\n   class=\"picture lazy-wrapper\" width=\"1024\" height=\"768\"\n  >\n          <!--[if IE 9]><video style=\"display: none;\"><![endif]-->\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_lg/public/eraforce/images/property/00PTt00000J5Z5RMAVDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=zbwn8S6y 1x, /sites/default/files/styles/image_style_4_3_landscape_lg_2x/public/eraforce/images/property/00PTt00000J5Z5RMAVDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=Lf_1Fsqw 2x\" media=\"all and (min-width: 1200px)\" type=\"image/jpeg\" width=\"1200\" height=\"900\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000J5Z5RMAVDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=CD9wvYru 1x, /sites/default/files/styles/image_style_4_3_landscape_md_2x/public/eraforce/images/property/00PTt00000J5Z5RMAVDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=VDQDfWdy 2x\" media=\"all and (min-width: 940px)\" type=\"image/jpeg\" width=\"1024\" height=\"768\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_sm/public/eraforce/images/property/00PTt00000J5Z5RMAVDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=J2jYsfpp 1x, /sites/default/files/styles/image_style_4_3_landscape_sm_2x/public/eraforce/images/property/00PTt00000J5Z5RMAVDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=oRm0_ICx 2x\" media=\"all and (min-width: 768px)\" type=\"image/jpeg\" width=\"768\" height=\"576\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_xs_wide/public/eraforce/images/property/00PTt00000J5Z5RMAVDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=P-fNcB-S 1x, /sites/default/files/styles/image_style_4_3_landscape_xs_wide_2x/public/eraforce/images/property/00PTt00000J5Z5RMAVDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=mA1qgK3G 2x\" type=\"image/jpeg\" width=\"480\" height=\"360\"/>\n        <!--[if IE 9]></video><![endif]-->\n      \n\n\n\n  \n\n<img\n     class=\"image\"\n\n    \n  alt=\"Desteldonkstraat - 10 -  - Lot 1 - 9042\"\n  \n      loading=\"lazy\"\n          src=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000J5Z5RMAVDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=c74750f6&amp;itok=CD9wvYru\"\n      />\n\n</picture>\n\n\n\n\n\n\n                    </div>\n\n    </article>\n\n\n              </div>\n\n          <div class=\"teaser-images-slider__item\">\n        \n\n        \n\n<article  class=\"media media--type-migrated-image media--view-mode-image-4-3\" >\n  \n        \n\n\n\n\n      \n\n  \n\n<div  class=\"field field--image field--name-field-media-image field--type-image field--label-visually_hidden field-media-image\">\n            \n                  \n                                                              \n      \n            \n                                          \n\n\n  \n\n\n  \n\n\n<picture\n   class=\"picture lazy-wrapper\" width=\"1024\" height=\"768\"\n  >\n          <!--[if IE 9]><video style=\"display: none;\"><![endif]-->\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_lg/public/eraforce/images/property/00PTt00000AVpuxMADDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=6eb229a4&amp;itok=63WeYKBf 1x, /sites/default/files/styles/image_style_4_3_landscape_lg_2x/public/eraforce/images/property/00PTt00000AVpuxMADDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=6eb229a4&amp;itok=32_m263z 2x\" media=\"all and (min-width: 1200px)\" type=\"image/jpeg\" width=\"1200\" height=\"900\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000AVpuxMADDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=6eb229a4&amp;itok=iLrlhAe3 1x, /sites/default/files/styles/image_style_4_3_landscape_md_2x/public/eraforce/images/property/00PTt00000AVpuxMADDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=6eb229a4&amp;itok=WEU0L3e2 2x\" media=\"all and (min-width: 940px)\" type=\"image/jpeg\" width=\"1024\" height=\"768\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_sm/public/eraforce/images/property/00PTt00000AVpuxMADDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=6eb229a4&amp;itok=rCZ1BbDd 1x, /sites/default/files/styles/image_style_4_3_landscape_sm_2x/public/eraforce/images/property/00PTt00000AVpuxMADDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=6eb229a4&amp;itok=PrwQvSiH 2x\" media=\"all and (min-width: 768px)\" type=\"image/jpeg\" width=\"768\" height=\"576\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_xs_wide/public/eraforce/images/property/00PTt00000AVpuxMADDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=6eb229a4&amp;itok=vDFhsgwN 1x, /sites/default/files/styles/image_style_4_3_landscape_xs_wide_2x/public/eraforce/images/property/00PTt00000AVpuxMADDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=6eb229a4&amp;itok=3pdOObyq 2x\" type=\"image/jpeg\" width=\"480\" height=\"360\"/>\n        <!--[if IE 9]></video><![endif]-->\n      \n\n\n\n  \n\n<img\n     class=\"image\"\n\n    \n  alt=\"Desteldonkstraat - 10 -  - Lot 1 - 9042\"\n  \n      loading=\"lazy\"\n          src=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000AVpuxMADDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=6eb229a4&amp;itok=iLrlhAe3\"\n      />\n\n</picture>\n\n\n\n\n\n\n                    </div>\n\n    </article>\n\n\n              </div>\n\n          <div class=\"teaser-images-slider__item\">\n        \n\n        \n\n<article  class=\"media media--type-migrated-image media--view-mode-image-4-3\" >\n  \n        \n\n\n\n\n      \n\n  \n\n<div  class=\"field field--image field--name-field-media-image field--type-image field--label-visually_hidden field-media-image\">\n            \n                  \n                                                              \n      \n            \n                                          \n\n\n  \n\n\n  \n\n\n<picture\n   class=\"picture lazy-wrapper\" width=\"1024\" height=\"768\"\n  >\n          <!--[if IE 9]><video style=\"display: none;\"><![endif]-->\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_lg/public/eraforce/images/property/00PTt00000AnexpMABDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=242cd5c8&amp;itok=ulyOETSt 1x, /sites/default/files/styles/image_style_4_3_landscape_lg_2x/public/eraforce/images/property/00PTt00000AnexpMABDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=242cd5c8&amp;itok=_CJNIPVT 2x\" media=\"all and (min-width: 1200px)\" type=\"image/jpeg\" width=\"1200\" height=\"900\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000AnexpMABDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=242cd5c8&amp;itok=iUzvczFf 1x, /sites/default/files/styles/image_style_4_3_landscape_md_2x/public/eraforce/images/property/00PTt00000AnexpMABDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=242cd5c8&amp;itok=iEDYHXh8 2x\" media=\"all and (min-width: 940px)\" type=\"image/jpeg\" width=\"1024\" height=\"768\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_sm/public/eraforce/images/property/00PTt00000AnexpMABDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=242cd5c8&amp;itok=dx8RIing 1x, /sites/default/files/styles/image_style_4_3_landscape_sm_2x/public/eraforce/images/property/00PTt00000AnexpMABDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=242cd5c8&amp;itok=3H0ejmZg 2x\" media=\"all and (min-width: 768px)\" type=\"image/jpeg\" width=\"768\" height=\"576\"/>\n                <source srcset=\"/sites/default/files/styles/image_style_4_3_landscape_xs_wide/public/eraforce/images/property/00PTt00000AnexpMABDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=242cd5c8&amp;itok=1tU_WoVA 1x, /sites/default/files/styles/image_style_4_3_landscape_xs_wide_2x/public/eraforce/images/property/00PTt00000AnexpMABDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=242cd5c8&amp;itok=B35PeCwb 2x\" type=\"image/jpeg\" width=\"480\" height=\"360\"/>\n        <!--[if IE 9]></video><![endif]-->\n      \n\n\n\n  \n\n<img\n     class=\"image\"\n\n    \n  alt=\"Desteldonkstraat - 10 -  - Lot 1 - 9042\"\n  \n      loading=\"lazy\"\n          src=\"/sites/default/files/styles/image_style_4_3_landscape_md/public/eraforce/images/property/00PTt00000AnexpMABDesteldonkstraat%20-%2010%20-%20%20-%20Lot%201%20-%209042.jpeg?h=242cd5c8&amp;itok=iUzvczFf\"\n      />\n\n</picture>\n\n\n\n\n\n\n                    </div>\n\n    </article>\n\n\n                  <span class=\"view-more-link\">\n            Toon meer\n          </span>\n              </div>\n\n      </div>\n<div class=\"field field--era-favorite-toggle\" data-nid=\"6056155\"><span title=\"Aan favorieten toevoegen\" class=\"favorite-toggle__icon js-favorite-toggle\" data-nid=\"6056155\" data-title_inactive=\"Aan favorieten toevoegen\" data-title_active=\"Uit favorieten verwijderen\"></span>\n</div>\n\n  </div>\n<div  class=\"property-teaser__content\">\n      \n\n\n  \n      \n\n  \n\n<div  class=\"field field--name-title field--type-string field--label-hidden title\">\n        \n                                        \n                      <h3>Ruime nieuwbouwwoning met schitterende tuin</h3>\n                                      </div>\n<div class=\"field field--price\">€ 485 000</div>\n<div class=\"field field--address text--small\">Desteldonkstraat 10, 9042 Gent</div>\n\n<div  class=\"property-teaser__info\">\n    <div class=\"field field--icon field--bedrooms\">4 slpkr.</div>\n<div class=\"field field--icon field--habitable-space\">198 m² woonoppervlakte</div>\n<div class=\"field field--icon field--ground-share\">833 m² grondoppervlakte</div>\n\n  </div><div class=\"field field--project-part\"><a href=\"/nl/nieuwbouw/desteldonkstraat-moderne-nieuwbouwwoningen\" class=\"project-link\" hreflang=\"nl\">Deel van project Desteldonkstraat: Moderne nieuwbouwwoningen</a></div>\n\n  </div>\n\n\n  \n      \n\n  \n\n<div  class=\"field field--name-field-property-display-canonical field--type-rs-display-field field--label-hidden field-property-display-canonical\">\n        \n                                        \n                      <div class=\"rs-canonical-link-formatter\">\n      <a href=\"/nl/te-koop/desteldonk/huis/ruime-nieuwbouwwoning-met-schitterende-tuin\" aria-label=\"Lees meer over Ruime nieuwbouwwoning met schitterende tuin\" target=\"_blank\" hreflang=\"nl\">Pand bekijken</a>\n</div>\n\n                                      </div>\n\n      </div>\n</article>\n",
+"coordinates": {
+"lat": "51.1235125",
+"long": "3.7810437"
+},
+"video_data": []
+}
+}
+],
+"meta": {
+"resultsCount": 3,
+"totalCount": 3,
+"sorts": [
+{
+"id": "suggested",
+"label": "Aanbevolen",
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828",
+"active": true
+},
+{
+"id": "created_desc",
+"label": "Meest recent",
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=-field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828",
+"active": false
+},
+{
+"id": "current_price_asc",
+"label": "Laagste prijs",
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=price&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828",
+"active": false
+},
+{
+"id": "current_price_desc",
+"label": "Hoogste prijs",
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=-price&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828",
+"active": false
+}
+],
+"facets": [
+{
+"id": "amount_bedrooms",
+"label": "Aantal slaapkamers",
+"path": "amount_bedrooms",
+"urlActiveMin": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden",
+"urlActiveMax": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden",
+"urlMin": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A__range_input_min__%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden",
+"urlMax": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28max%3A__range_input_max__%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden",
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A__range_input_min__%3Bmax%3A__range_input_max__%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden",
+"replacement": {
+"min": "__range_input_min__",
+"max": "__range_input_max__"
+},
+"values": {
+"active_min": "3",
+"active_max": "",
+"min": "4",
+"max": "3"
+}
+},
+{
+"id": "book_2_look",
+"label": "ERA BOOK2LOOK",
+"path": "book_2_look",
+"terms": []
+},
+{
+"id": "coordinates",
+"label": "Coordinates",
+"path": "coordinates",
+"terms": []
+},
+{
+"id": "ecg",
+"label": "ERA Comfort Garantie",
+"path": "ecg",
+"terms": []
+},
+{
+"id": "energy_label",
+"label": "EPC",
+"path": "energy_label",
+"terms": [
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Benergy_label%5D=-",
+"values": {
+"value": "-",
+"label": "-",
+"active": false
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Benergy_label%5D=A",
+"values": {
+"value": "A",
+"label": "A",
+"active": false
+}
+}
+]
+},
+{
+"id": "habitable_area_m2",
+"label": "Bewoonbare oppervlakte (m²)",
+"path": "habitable_area_m2",
+"urlActiveMin": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Boutside%5D=garden",
+"urlActiveMax": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Boutside%5D=garden",
+"urlMin": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A__range_input_min__%29&filter%5Boutside%5D=garden",
+"urlMax": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28max%3A__range_input_max__%29&filter%5Boutside%5D=garden",
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A__range_input_min__%3Bmax%3A__range_input_max__%29&filter%5Boutside%5D=garden",
+"replacement": {
+"min": "__range_input_min__",
+"max": "__range_input_max__"
+},
+"values": {
+"active_min": "160",
+"active_max": "",
+"min": "191.0",
+"max": "224.0"
+}
+},
+{
+"id": "heating_type",
+"label": "Type verwarming",
+"path": "heating_type",
+"terms": [
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Bheating_type%5D=Centrale%20verwarming",
+"values": {
+"value": "Centrale verwarming",
+"label": "Centrale verwarming",
+"active": false
+}
+}
+]
+},
+{
+"id": "investr_id",
+"label": "Investering in vastgoed",
+"path": "investr_id",
+"terms": []
+},
+{
+"id": "new_building",
+"label": "Nieuwbouw",
+"path": "new_building",
+"terms": [
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden",
+"values": {
+"value": "",
+"label": "Alle",
+"active": false
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Bnew_building%5D=1",
+"values": {
+"value": "1",
+"label": "Nieuwbouw",
+"active": false
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Bnew_building%5D=0",
+"values": {
+"value": "0",
+"label": "Geen nieuwbouw",
+"active": false
+}
+}
+]
+},
+{
+"id": "ohd",
+"label": "ERA Open Huizen Dag",
+"path": "ohd",
+"terms": []
+},
+{
+"id": "outside",
+"label": "Tuin / terras",
+"path": "outside",
+"terms": [
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29",
+"values": {
+"value": "garden",
+"label": "Tuin",
+"active": true
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden%2Cterrace",
+"values": {
+"value": "terrace",
+"label": "Terras",
+"active": false
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828",
+"values": {
+"value": "Tuin",
+"label": "Tuin",
+"active": true
+}
+}
+]
+},
+{
+"id": "price",
+"label": "Prijs",
+"path": "price",
+"urlActiveMin": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Bprice%5D=%28max%3A600000%29",
+"urlActiveMax": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Bprice%5D=%28min%3A450000%29",
+"urlMin": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A__range_input_min__%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden",
+"urlMax": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28max%3A__range_input_max__%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden",
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A__range_input_min__%3Bmax%3A__range_input_max__%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden",
+"replacement": {
+"min": "__range_input_min__",
+"max": "__range_input_max__"
+},
+"values": {
+"active_min": "450000",
+"active_max": "600000",
+"min": "440000.0",
+"max": "485000.0"
+}
+},
+{
+"id": "property_type",
+"label": "Type woning",
+"path": "property_type",
+"terms": [
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden",
+"values": {
+"value": "46",
+"label": "Huis",
+"active": true
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828",
+"values": {
+"value": "46",
+"label": "Huis",
+"active": true
+}
+}
+]
+},
+{
+"id": "sale_or_rent",
+"label": "Sale or rent",
+"path": "sale_or_rent",
+"terms": [
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden",
+"values": {
+"value": "sale",
+"label": "sale",
+"active": true
+}
+}
+]
+},
+{
+"id": "total_space_soil_area",
+"label": "Totale oppervlakte (m²)",
+"path": "total_space_soil_area",
+"urlActiveMin": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden",
+"urlActiveMax": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden",
+"urlMin": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Btotal_space_soil_area%5D=%28min%3A__range_input_min__%29",
+"urlMax": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Btotal_space_soil_area%5D=%28max%3A__range_input_max__%29",
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Btotal_space_soil_area%5D=%28min%3A__range_input_min__%3Bmax%3A__range_input_max__%29",
+"replacement": {
+"min": "__range_input_min__",
+"max": "__range_input_max__"
+},
+"values": {
+"active_min": "",
+"active_max": "",
+"min": "568.0",
+"max": "833.0"
+}
+},
+{
+"id": "type_of_building",
+"label": "Type bebouwing",
+"path": "type_of_building",
+"terms": [
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Btype_of_building%5D=159",
+"values": {
+"value": "159",
+"label": "Halfopen",
+"active": false
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Btype_of_building%5D=156",
+"values": {
+"value": "156",
+"label": "Open",
+"active": false
+}
+}
+]
+},
+{
+"id": "municipalities",
+"label": "Gemeente",
+"terms": [
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828",
+"values": {
+"value": "342",
+"label": "Gent",
+"active": true
+}
+}
+]
+},
+{
+"id": "sub_municipalities",
+"label": "Plaats",
+"terms": [
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=1104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828",
+"values": {
+"value": "740",
+"label": "Afsnee",
+"active": true
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828",
+"values": {
+"value": "1104",
+"label": "Desteldonk",
+"active": true
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828",
+"values": {
+"value": "1131",
+"label": "Drongen",
+"active": true
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828",
+"values": {
+"value": "1298",
+"label": "Gentbrugge",
+"active": true
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201808%201863%202066%202373%202380%202397%202631%202786%202828",
+"values": {
+"value": "1689",
+"label": "Ledeberg",
+"active": true
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201863%202066%202373%202380%202397%202631%202786%202828",
+"values": {
+"value": "1808",
+"label": "Mariakerke",
+"active": true
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%202066%202373%202380%202397%202631%202786%202828",
+"values": {
+"value": "1863",
+"label": "Mendonk",
+"active": true
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202373%202380%202397%202631%202786%202828",
+"values": {
+"value": "2066",
+"label": "Oostakker",
+"active": true
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202380%202397%202631%202786%202828",
+"values": {
+"value": "2373",
+"label": "Sint-Amandsberg",
+"active": true
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202397%202631%202786%202828",
+"values": {
+"value": "2380",
+"label": "Sint-Denijs-Westrem",
+"active": true
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202631%202786%202828",
+"values": {
+"value": "2397",
+"label": "Sint-Kruis-Winkel",
+"active": true
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202786%202828",
+"values": {
+"value": "2631",
+"label": "Vinderhoute",
+"active": true
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202828",
+"values": {
+"value": "2786",
+"label": "Wondelgem",
+"active": true
+}
+},
+{
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786",
+"values": {
+"value": "2828",
+"label": "Zwijnaarde",
+"active": true
+}
+}
+]
+}
+],
+"spatial": {
+"id": "spatial",
+"label": "Op kaart zoeken",
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828",
+"replacementUrl": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&filter%5Bspatial%5D=__replacement_polygon__",
+"replacement": "__replacement_polygon__",
+"activeValue": "",
+"active": false
+},
+"location": {
+"id": "location",
+"label": "Locatie",
+"url": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828",
+"replacementUrl": "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=__replacement_municipalities__&filter%5Blocation%5D%5Bsub_municipalities%5D=__replacement_sub_municipalities__",
+"replacementMunicipalities": "__replacement_municipalities__",
+"replacementSubMunicipalities": "__replacement_sub_municipalities__"
+}
+},
+"links": {
+"self": {
+"href": "https://www.era.be/nl/jsonapi/index/property_index?filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740%201104%201131%201298%201689%201808%201863%202066%202373%202380%202397%202631%202786%202828&pager%5Boffset%5D=0&sort=broker--field_start_date"
+}
+}
+}

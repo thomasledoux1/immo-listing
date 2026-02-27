@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `listings_agency_id_external_id_unique` ON `listings` (`agency_id`,`external_id`);

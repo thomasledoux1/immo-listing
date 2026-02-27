@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ghent Immo – New listings (24h)
 
-## Getting Started
+Next.js app that scrapes **20 immo agencies in Ghent** (no aggregators like Zimmo/Immoweb) and shows houses that appeared in the **last 24 hours** with:
 
-First, run the development server:
+- **Price:** 450 000 – 600 000 €  
+- **Garden:** yes  
+- **Bedrooms:** ≥ 3  
+- **Livable surface:** ≥ 160 m²  
+
+## Stack
+
+- **Next.js 16** (App Router), **React 19**, **TypeScript**
+- **shadcn/ui** + Tailwind
+- **Drizzle ORM** + **SQLite** (better-sqlite3)
+- **Playwright** for scraping agency websites
+
+## Setup
+
+```bash
+npm install
+npx drizzle-kit push
+npx tsx scripts/seed-agencies.ts
+```
+
+Optional: install Playwright Chromium for the scraper:
+
+```bash
+npx playwright install chromium
+```
+
+## Run the app
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). The home page lists matching houses (first seen in the last 24h). If the list is empty, run the scraper once to backfill.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Running the scraper
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The scraper visits each agency’s website, extracts listings, and upserts them into the DB. **“Last 24 hours”** is based on **first time we see a listing** (`first_seen_at`).
 
-## Learn More
+### Option 1: Local / CLI (recommended)
 
-To learn more about Next.js, take a look at the following resources:
+Run the script manually or via cron on a machine where Node and Playwright can run:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run scrape
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Or with tsx directly:
 
-## Deploy on Vercel
+```bash
+npx tsx scripts/scrape.ts
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Schedule it every 2–6 hours (e.g. cron):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```cron
+0 */4 * * * cd /path/to/ghent-immo && npm run scrape
+```
+
+### Option 2: API route (Vercel or self-hosted)
+
+You can trigger the same logic via GET or POST with a secret:
+
+```bash
+curl -X POST "https://your-domain.com/api/cron/scrape" \
+  -H "Authorization: Bearer YOUR_CRON_SECRET"
+# or
+curl "https://your-domain.com/api/cron/scrape?secret=YOUR_CRON_SECRET"
+```
+
+Set `CRON_SECRET` in your environment. On **Vercel**, the route uses [@sparticuz/chromium](https://www.npmjs.com/package/@sparticuz/chromium) and `playwright-core` for a serverless-friendly Chromium build (see [Zenrows: Playwright on Vercel – Cold start optimization](https://www.zenrows.com/blog/playwright-vercel#cold-start-optimization)). **Vercel Cron** is configured to call this route every 6 hours (`vercel.json`).
+
+## Database
+
+- **SQLite** file: `db/local.sqlite` (override with `DATABASE_PATH`).
+- **Tables:** `agencies` (20 Ghent agencies + scraper config), `listings` (url, price, bedrooms, surface, garden, first_seen_at, last_seen_at, deleted_at).
+- **Soft delete:** Listings you delete in the UI are marked with `deleted_at` and no longer shown. The scraper does not re-add or update them, so they stay hidden.
+- **Drizzle:** `npm run db:generate`, `npm run db:push`, `npm run db:studio`.
+
+## Project layout
+
+- `app/` – Next.js App Router (page, API cron route)
+- `components/` – UI (shadcn, listing card)
+- `db/` – Drizzle schema and migrations
+- `data/agencies.ts` – Agency list and scraper config
+- `lib/` – DB client, queries, scraper (adapters, normalize, run)
+- `scripts/` – `seed-agencies.ts`, `scrape.ts`
+
+Data is collected from public agency websites. Respect `robots.txt` and rate limits when scheduling the scraper.
