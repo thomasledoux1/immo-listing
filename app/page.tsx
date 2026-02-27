@@ -1,11 +1,11 @@
-import { getListings } from "@/lib/queries";
-import { ListingCard } from "@/components/listing-card";
+import { getListings } from '@/lib/queries';
+import { ListingCard } from '@/components/listing-card';
 
-export const dynamic = "force-dynamic";
+export const dynamic = 'force-dynamic';
 
 export const metadata = {
-  title: "Ghent Immo – Listings",
-  description: "All listings from partner agencies in Ghent.",
+  title: 'Ghent Immo – Listings',
+  description: 'All listings from partner agencies in Ghent.',
 };
 
 export default async function Home() {
@@ -17,9 +17,6 @@ export default async function Home() {
         <h1 className="text-2xl font-bold tracking-tight md:text-3xl">
           Ghent Immo – Listings
         </h1>
-        <p className="text-muted-foreground mt-1">
-          All listings from the database.
-        </p>
       </header>
       <main className="mx-auto max-w-6xl px-4 py-8 md:px-8">
         {listings.length === 0 ? (
@@ -30,7 +27,7 @@ export default async function Home() {
           </div>
         ) : (
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {listings.map((listing) => (
+            {listings.map(listing => (
               <ListingCard key={listing.id} listing={listing} />
             ))}
           </div>
