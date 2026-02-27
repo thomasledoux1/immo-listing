@@ -15,7 +15,7 @@ export default async function Home() {
     <div className="min-h-screen bg-background">
       <header className="border-b bg-card px-4 py-6 md:px-8">
         <h1 className="text-2xl font-bold tracking-tight md:text-3xl">
-          Ghent Immo – Listings
+          Ghent Immo
         </h1>
       </header>
       <main className="mx-auto max-w-6xl px-4 py-8 md:px-8">
