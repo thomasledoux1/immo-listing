@@ -7,10 +7,10 @@ export function parsePrice(text: string | null | undefined): number {
   return match ? parseInt(match[0].replace(/\./g, ""), 10) : 0;
 }
 
-/** Parse bedroom count from text like "3 slpkr." or "3 slaapkamers" */
+/** Parse bedroom count from text like "3 slpkr." or "3 slaapkamers" or "3 bdr." */
 export function parseBedrooms(text: string | null | undefined): number | null {
   if (!text) return null;
-  const match = text.match(/(\d+)\s*(?:slpkr\.?|slaapkamer|bedroom|bed)/i);
+  const match = text.match(/(\d+)\s*(?:slpkr\.?|slaapkamer|bedroom|bed|bdr\.?)/i);
   return match ? parseInt(match[1], 10) : null;
 }
 

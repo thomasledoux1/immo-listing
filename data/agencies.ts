@@ -114,7 +114,25 @@ export const AGENCIES: AgencyConfig[] = [
     websiteUrl: 'https://www.trevi.be',
     scraperConfig: {
       listingsUrl:
-        'https://www.trevi.be/nl/panden-te-koop/huizen?purpose=0&pagenumber=&office=&estatecategory=1&zips%5B%5D=9090_Melle&zips%5B%5D=9820_Merelbeke&zips%5B%5D=%5BStad%5D12_Gent+%2B+Deelgemeenten&minprice=450000&maxprice=600000&rooms=3&estateid=',
+        'https://www.trevi.be/nl/panden-te-koop/huizen?purpose=0&pagenumber=&office=&estatecategory=1&zips%5B%5D=9070_Destelbergen&zips%5B%5D=9070_Heusden+%28O.Vl.%29&zips%5B%5D=9090_Melle&zips%5B%5D=9820_Merelbeke&zips%5B%5D=%5BStad%5D12_Gent+%2B+Deelgemeenten&minprice=450000&maxprice=600000&rooms=3&estateid=',
+    },
+  },
+  {
+    name: 'Immoweb',
+    slug: 'immoweb',
+    websiteUrl: 'https://www.immoweb.be',
+    scraperConfig: {
+      listingsUrl:
+        'https://www.immoweb.be/en/search/house/for-sale?countries=BE&postalCodes=9000,9030,9031,9032,9040,9041,9050,9070,9090,9820,9940&minPrice=450000&maxPrice=600000&priceType=SALE_PRICE&page=1&orderBy=newest',
+    },
+  },
+  {
+    name: 'Zimmo',
+    slug: 'zimmo',
+    websiteUrl: 'https://www.zimmo.be',
+    scraperConfig: {
+      listingsUrl:
+        'https://www.zimmo.be/nl/zoeken/?search=eyJmaWx0ZXIiOnsic3RhdHVzIjp7ImluIjpbIkZPUl9TQUxFIiwiVEFLRV9PVkVSIl19LCJjYXRlZ29yeSI6eyJpbiI6WyJIT1VTRSJdfSwicHJpY2UiOnsidW5rbm93biI6dHJ1ZSwicmFuZ2UiOnsibWluIjo0NTAwMDAsIm1heCI6NjAwMDAwfX0sImJlZHJvb21zIjp7InVua25vd24iOnRydWUsInJhbmdlIjp7Im1pbiI6M319LCJwbGFjZUlkIjp7ImluIjpbMTUwNiwxNTE4LDE1MTcsMTUxOSwxNTExLDE1MTAsMTUxMiwxNTEzLDE1MTUsMTUxNiwxNTE0LDE1MjgsMTUyOSwxNTMwLDE0OTQsMTQ5NV19fSwicGFnaW5nIjp7ImZyb20iOjAsInNpemUiOjE3fSwic29ydGluZyI6W3sidHlwZSI6IkRBVEUiLCJvcmRlciI6IkRFU0MifV19&p=1#gallery',
     },
   },
 ];
