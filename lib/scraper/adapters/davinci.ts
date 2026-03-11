@@ -82,7 +82,8 @@ export async function scrapeDaVinci(
 
         let municipality: string | null = null;
         const locEl = el.querySelector("[class*='location'], [class*='address'], [class*='place'], .content [class*='city']");
-        if (locEl) municipality = (locEl.textContent ?? "").trim() || null;
+        const address = (locEl?.textContent ?? "").trim() || null;
+        if (address) municipality = address;
         if (!municipality && title) {
           const postalMatch = title.match(/\b(9\d{3})\s+([A-Za-z\-]+(?:\s+[A-Za-z\-]+)*)/);
           if (postalMatch) municipality = postalMatch[2].trim();
@@ -98,6 +99,7 @@ export async function scrapeDaVinci(
           hasGarden,
           imageUrl: imgSrc,
           municipality,
+          address: address || (title && municipality ? `${title}, ${municipality}` : municipality),
         };
       });
 
@@ -122,6 +124,7 @@ export async function scrapeDaVinci(
         livingSurfaceM2: data.livingSurfaceM2,
         hasGarden: data.hasGarden,
         municipality: data.municipality ?? "Gent",
+        address: data.address ?? null,
         description: null,
         imageUrl,
       });

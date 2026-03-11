@@ -45,15 +45,18 @@ export async function scrapeGeneric(
       const priceEl = sel.priceSelector ? el.querySelector(sel.priceSelector) : null;
       const imgEl = el.querySelector(sel.imageSelector ?? "img");
       const locEl = el.querySelector("[class*='location'], [class*='locality'], [class*='city'], [class*='address']");
-      const municipality = (locEl?.textContent?.trim()) || null;
+      const address = (locEl?.textContent?.trim()) || null;
+      const municipality = address || null;
       const inner = (el.innerText ?? "").trim();
       const postalMatch = !municipality ? inner.match(/\b(9\d{3})\s+([A-Za-z\-]+(?:\s+[A-Za-z\-]+)*)/) : null;
+      const municipalityResolved = municipality || (postalMatch ? postalMatch[2].trim() : null);
       return {
         allText: inner,
         title: titleEl?.textContent?.trim() ?? "",
         priceText: priceEl?.textContent?.trim() ?? "",
         img: imgEl?.getAttribute("src") ?? null,
-        municipality: municipality || (postalMatch ? postalMatch[2].trim() : null),
+        municipality: municipalityResolved,
+        address: address || (titleEl?.textContent?.trim() && municipalityResolved ? `${titleEl.textContent.trim()}, ${municipalityResolved}` : municipalityResolved),
       };
     }, { titleSelector: config.titleSelector ?? "", priceSelector: config.priceSelector ?? "", imageSelector: config.imageSelector ?? "img" });
     const allText = data.allText;
@@ -77,6 +80,7 @@ export async function scrapeGeneric(
       livingSurfaceM2: surface,
       hasGarden,
       municipality: data.municipality ?? "Onbekend",
+      address: data.address ?? null,
       description: null,
       imageUrl: img ? (img.startsWith("http") ? img : new URL(img, baseUrl).href) : null,
     });

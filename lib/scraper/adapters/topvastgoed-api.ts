@@ -66,6 +66,9 @@ function parseListingBlocks(html: string): NormalizedListing[] {
     const imageUrl = imgMatch ? imgMatch[1] : null;
     const municipalityMatch = title.match(/Woning in (.+)/i);
     const municipality = municipalityMatch ? municipalityMatch[1].trim() : "Onbekend";
+    const addressMatch = block.match(/<div class="pro-list-address">\s*([^<]*?)<\/div>/i)
+      ?? block.match(/<div class="pro-list-location">\s*([^<]*?)<\/div>/i);
+    const address = (addressMatch ? addressMatch[1].trim() : null) || (title ? `${title}, ${municipality}` : municipality);
 
     results.push({
       externalId: externalIdFromUrl(url),
@@ -76,6 +79,7 @@ function parseListingBlocks(html: string): NormalizedListing[] {
       livingSurfaceM2,
       hasGarden,
       municipality,
+      address,
       description: null,
       imageUrl,
     });

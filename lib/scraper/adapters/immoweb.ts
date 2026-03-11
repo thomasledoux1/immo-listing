@@ -176,6 +176,40 @@ function extractFromDomCards(html: string): DomCardData[] {
   return cards;
 }
 
+/** Extract address from a detail page HTML (element with class classified__information--address-row). */
+function extractAddressFromDetailHtml(html: string): string | null {
+  const match = html.match(
+    /classified__information--address-row[\s\S]*?>([\s\S]*?)<\/div>/i,
+  );
+  if (!match?.[1]) return null;
+  const raw = match[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  return raw.length > 0 ? raw : null;
+}
+
+/** Fetch detail page and return address if present; otherwise null. */
+async function fetchAddressFromDetailPage(
+  url: string,
+  page: Page | undefined,
+): Promise<string | null> {
+  try {
+    if (page && typeof (page as Page).goto === 'function') {
+      const res = await page.goto(url, {
+        waitUntil: 'domcontentloaded',
+        timeout: 15000,
+      });
+      if (!res?.ok()) return null;
+      const html = await page.content();
+      return extractAddressFromDetailHtml(html);
+    }
+    const res = await fetch(url, { headers: BROWSER_HEADERS });
+    if (!res.ok) return null;
+    const html = await res.text();
+    return extractAddressFromDetailHtml(html);
+  } catch {
+    return null;
+  }
+}
+
 /** Build listing URL from classified (locality is slugified in URL) */
 function listingUrl(baseUrl: string, c: ImmowebClassified): string {
   const id = c.id;
@@ -194,7 +228,6 @@ export function parseImmowebHtml(
   baseUrl: string,
 ): NormalizedListing[] {
   const blocks = extractClassifiedJsonBlocks(html);
-  console.log('blocks', blocks.length);
   const seen = new Set<string>();
   const results: NormalizedListing[] = [];
 
@@ -219,10 +252,13 @@ export function parseImmowebHtml(
         c.price?.maxRangeValue;
       if (price == null || price <= 0) continue;
 
-      const locality = c.property?.location?.locality ?? '';
+      const loc = c.property?.location;
+      const locality = loc?.locality ?? '';
+      const postalCode = loc?.postalCode ?? '';
       const municipality = locality
         ? locality.replace(/^\d+\s*/, '').trim()
         : 'Onbekend';
+      const address = [locality, postalCode].filter(Boolean).join(' ').trim() || municipality || null;
       const title = c.property?.title ?? 'House';
       const bedrooms = c.property?.bedroomCount ?? null;
       const surface = c.property?.netHabitableSurface ?? null;
@@ -237,6 +273,7 @@ export function parseImmowebHtml(
         livingSurfaceM2: surface,
         hasGarden: hasGardenFromText(title),
         municipality,
+        address,
         description: null,
         imageUrl,
       });
@@ -245,7 +282,6 @@ export function parseImmowebHtml(
   }
 
   const domCards = extractFromDomCards(html);
-  console.log('cards', domCards.length);
   for (const card of domCards) {
     if (seen.has(card.url)) continue;
     seen.add(card.url);
@@ -254,6 +290,7 @@ export function parseImmowebHtml(
     const municipality = card.localityText
       ? card.localityText.replace(/^\d+\s*/, '').trim()
       : 'Onbekend';
+    const address = (card.localityText?.trim()) || municipality || null;
     results.push({
       externalId: card.externalId,
       url: card.url,
@@ -263,6 +300,7 @@ export function parseImmowebHtml(
       livingSurfaceM2: parseSurface(card.infoText),
       hasGarden: hasGardenFromText(card.title + ' ' + card.infoText),
       municipality,
+      address,
       description: null,
       imageUrl: card.imageUrl,
     });
@@ -298,7 +336,6 @@ export async function scrapeImmoweb(
       });
     await page.waitForTimeout(1500);
     html = await page.content();
-    console.log('html', html);
   } else {
     const res = await fetch(listingsUrl, {
       headers: BROWSER_HEADERS,
@@ -308,6 +345,17 @@ export async function scrapeImmoweb(
   }
 
   const results = parseImmowebHtml(html, baseUrl);
+
+  for (let i = 0; i < results.length; i++) {
+    const listing = results[i];
+    if (!listing?.url) continue;
+    const address = await fetchAddressFromDetailPage(listing.url, page ?? undefined);
+    listing.address = address ?? null;
+    if (i < results.length - 1) {
+      await new Promise((r) => setTimeout(r, 600));
+    }
+  }
+
   if (results.length === 0 && html.length > 0) {
     const blocks = extractClassifiedJsonBlocks(html);
     console.error(
@@ -340,8 +388,6 @@ async function main() {
     const fs = await import('fs');
     const html = fs.readFileSync(localFile, 'utf-8');
     const items = parseImmowebHtml(html, baseUrl);
-    console.log(JSON.stringify(items, null, 2));
-    console.log('Count:', items.length);
     return;
   }
 
@@ -351,8 +397,6 @@ async function main() {
     config,
     baseUrl,
   );
-  console.log(JSON.stringify(items, null, 2));
-  console.log('Count:', items.length);
 }
 
 if (process.argv[1]?.includes('immoweb')) {

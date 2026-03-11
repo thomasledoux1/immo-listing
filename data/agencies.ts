@@ -1,3 +1,5 @@
+import { IMMOSCOOP_SEARCH_URL } from '../lib/constants';
+
 /**
  * Top 20 immo agencies in Ghent (non-aggregators).
  * Excludes Zimmo, Immoweb, Realo, HouseMatch, Belles Demeures portal.
@@ -27,6 +29,8 @@ export interface AgencyScraperConfig {
   topVastgoedApi?: boolean;
   /** When true, fetch from Immo Francois SweepBright API */
   immoFrancoisApi?: boolean;
+  /** When true, load Immoscoop search page in browser, wait 10s, scrape HTML */
+  immoscoopApi?: boolean;
   /** Single URL (used when listingsUrls not set) */
   listingsUrl?: string;
   /** Multiple URLs to scrape (e.g. one per city); merged and deduped */
@@ -133,6 +137,15 @@ export const AGENCIES: AgencyConfig[] = [
     scraperConfig: {
       listingsUrl:
         'https://www.zimmo.be/nl/zoeken/?search=eyJmaWx0ZXIiOnsic3RhdHVzIjp7ImluIjpbIkZPUl9TQUxFIiwiVEFLRV9PVkVSIl19LCJjYXRlZ29yeSI6eyJpbiI6WyJIT1VTRSJdfSwicHJpY2UiOnsidW5rbm93biI6dHJ1ZSwicmFuZ2UiOnsibWluIjo0NTAwMDAsIm1heCI6NjAwMDAwfX0sImJlZHJvb21zIjp7InVua25vd24iOnRydWUsInJhbmdlIjp7Im1pbiI6M319LCJwbGFjZUlkIjp7ImluIjpbMTUwNiwxNTE4LDE1MTcsMTUxOSwxNTExLDE1MTAsMTUxMiwxNTEzLDE1MTUsMTUxNiwxNTE0LDE1MjgsMTUyOSwxNTMwLDE0OTQsMTQ5NV19fSwicGFnaW5nIjp7ImZyb20iOjAsInNpemUiOjE3fSwic29ydGluZyI6W3sidHlwZSI6IkRBVEUiLCJvcmRlciI6IkRFU0MifV19&p=1#gallery',
+    },
+  },
+  {
+    name: 'Immoscoop',
+    slug: 'immoscoop',
+    websiteUrl: 'https://www.immoscoop.be',
+    scraperConfig: {
+      immoscoopApi: true,
+      listingsUrl: IMMOSCOOP_SEARCH_URL,
     },
   },
 ];

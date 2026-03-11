@@ -60,11 +60,12 @@ export async function scrapeEra(
     const hasGarden = hasGardenFromText(allText);
     const img = await (cardEl as ElementHandle<HTMLElement>).evaluate((el) => el.querySelector("img")?.getAttribute("src") ?? null);
 
-    const municipality =
+    const address =
       (await (cardEl as ElementHandle<HTMLElement>).evaluate((el) => {
         const loc = el.querySelector("[class*='location'], [class*='locality'], [class*='city'], [class*='address']");
         return loc?.textContent?.trim() ?? null;
-      })) ?? "Gent";
+      })) ?? null;
+    const municipality = address ?? "Gent";
 
     results.push({
       externalId: externalIdFromUrl(fullUrl),
@@ -75,6 +76,7 @@ export async function scrapeEra(
       livingSurfaceM2: surface,
       hasGarden,
       municipality,
+      address: address ?? (title ? `${title}, ${municipality}` : null),
       description: null,
       imageUrl: img ? (img.startsWith("http") ? img : new URL(img, baseUrl).href) : null,
     });

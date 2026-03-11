@@ -89,6 +89,7 @@ export async function scrapeZimmo(
           return lastLine.replace(/^\d+\s*/, "").trim() || "Onbekend";
         })()
       : "Onbekend";
+    const address = (data.addressText?.trim()) || null;
 
     results.push({
       externalId: externalIdFromUrl(fullUrl),
@@ -99,6 +100,7 @@ export async function scrapeZimmo(
       livingSurfaceM2: surface,
       hasGarden,
       municipality,
+      address,
       description: null,
       imageUrl: data.img
         ? data.img.startsWith("http")

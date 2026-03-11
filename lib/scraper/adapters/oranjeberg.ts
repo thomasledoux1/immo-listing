@@ -65,6 +65,7 @@ export async function scrapeOranjeberg(
         const location = (locationEl?.textContent ?? "").trim();
         const title = desc || [adres, location].filter(Boolean).join(", ") || "Woning";
         const municipality = (location && location.trim()) || "Onbekend";
+        const address = [adres, location].filter(Boolean).join(", ") || title || municipality;
 
         const roomsEl = el.querySelector(".item-text .rooms");
         const roomCount = roomsEl ? roomsEl.querySelectorAll(".room").length : 0;
@@ -91,6 +92,7 @@ export async function scrapeOranjeberg(
           livingSurfaceM2,
           hasGarden,
           municipality,
+          address,
           imageUrl,
         };
       });
@@ -109,7 +111,8 @@ export async function scrapeOranjeberg(
         bedrooms: data.bedrooms,
         livingSurfaceM2: data.livingSurfaceM2,
         hasGarden: data.hasGarden,
-        municipality: (data.municipality && data.municipality.trim()) || "Onbekend",
+        municipality: data.municipality?.trim() || "Onbekend",
+        address: data.address ?? null,
         description: null,
         imageUrl,
       });

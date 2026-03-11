@@ -16,6 +16,7 @@ import { scrapeImmoweb } from './adapters/immoweb';
 import { scrapeZimmo } from './adapters/zimmo';
 import { fetchImmoFrancoisFromApi } from './adapters/immofrancois-api';
 import { fetchTopVastgoedFromApi } from './adapters/topvastgoed-api';
+import { fetchImmoscoopFromApi } from './adapters/immoscoop-api';
 
 const USER_AGENT =
   'GhentImmoScraper/1.0 (Personal project; listing aggregator for Ghent area)';
@@ -95,6 +96,17 @@ export async function runScraperForAgency(
       console.error(`[${agency.slug}] Immo Francois API fetch failed:`, err);
       return { added: 0, updated: 0 };
     }
+  } else if (config.immoscoopApi) {
+    try {
+      items = await fetchImmoscoopFromApi(
+        baseUrl,
+        config.listingsUrl ?? undefined,
+        page,
+      );
+    } catch (err) {
+      console.error(`[${agency.slug}] Immoscoop fetch failed:`, err);
+      return { added: 0, updated: 0 };
+    }
   } else if (config.apiUrl) {
     try {
       items = await fetchEraFromApi(baseUrl, config.apiUrl);
@@ -131,10 +143,21 @@ export async function runScraperForAgency(
     }
   }
 
+  /** Ensure every listing has an address for deduplication; use title + municipality when adapter did not set one. */
+  const itemsWithAddress: NormalizedListing[] = items.map((item) => {
+    const existing = item.address?.trim();
+    if (existing) return { ...item, address: existing };
+    const fallback = [item.title, item.municipality ?? undefined]
+      .filter(Boolean)
+      .join(', ')
+      .trim();
+    return { ...item, address: fallback || null };
+  });
+
   let added = 0;
   let updated = 0;
 
-  for (const item of items) {
+  for (const item of itemsWithAddress) {
     const price = Number(item.price);
     if (!Number.isFinite(price) || price <= 0) continue;
     const row = {
@@ -150,6 +173,7 @@ export async function runScraperForAgency(
         item.municipality?.trim() && item.municipality.trim().length > 0
           ? item.municipality.trim()
           : item.title.split(' ').at(-1),
+      address: item.address?.trim() || null,
       description: item.description,
       imageUrl: item.imageUrl,
       firstSeenAt: now,
@@ -184,6 +208,7 @@ export async function runScraperForAgency(
           livingSurfaceM2: row.livingSurfaceM2,
           hasGarden: row.hasGarden,
           municipality: row.municipality,
+          address: row.address,
           description: row.description,
           imageUrl: row.imageUrl,
           lastSeenAt: now,

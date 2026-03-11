@@ -8,8 +8,32 @@ export const metadata = {
   description: 'All listings from partner agencies in Ghent.',
 };
 
+function normalizeAddress(addr: string): string {
+  return addr.trim().toLowerCase().replace(/\s+/g, ' ');
+}
+
+/** True if address looks like a street address with a house number (e.g. "Korte Meer 12"), not just a municipality ("Gent", "9000 Gent"). */
+function hasHouseNumber(addr: string): boolean {
+  return /[A-Za-zÀ-ÿ]\s+\d+[A-Za-z]?\b/.test(addr.trim());
+}
+
+/** Keep one listing per address; listings without address or with only municipality are left as-is. */
+function dedupeByAddress<T extends { address?: string | null }>(rows: T[]): T[] {
+  const seenAddresses = new Set<string>();
+  return rows.filter((row) => {
+    const addr = row.address?.trim();
+    if (!addr) return true;
+    if (!hasHouseNumber(addr)) return true;
+    const key = normalizeAddress(addr);
+    if (seenAddresses.has(key)) return false;
+    seenAddresses.add(key);
+    return true;
+  });
+}
+
 export default async function Home() {
-  const listings = await getListings();
+  const allListings = await getListings();
+  const listings = dedupeByAddress(allListings);
 
   return (
     <div className="min-h-screen bg-background">

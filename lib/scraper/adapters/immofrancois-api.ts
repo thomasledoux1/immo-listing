@@ -63,7 +63,11 @@ function estateToListing(estate: ImmoFrancoisEstate): NormalizedListing | null {
   const firstImage = images.sort((a, b) => (a.ordinal ?? 0) - (b.ordinal ?? 0))[0];
   const imageUrl = firstImage?.url ?? null;
 
-  const municipality = estate.location?.city?.trim() || "Onbekend";
+  const loc = estate.location;
+  const municipality = loc?.city?.trim() || "Onbekend";
+  const streetPart = [loc?.street, loc?.number].filter(Boolean).join(" ").trim();
+  const cityPart = [loc?.postal_code, loc?.city].filter(Boolean).join(" ").trim();
+  const address = [streetPart, cityPart].filter(Boolean).join(", ") || title || municipality;
 
   return {
     externalId: estate.id ?? url,
@@ -74,14 +78,17 @@ function estateToListing(estate: ImmoFrancoisEstate): NormalizedListing | null {
     livingSurfaceM2: liveable ?? null,
     hasGarden,
     municipality,
+    address,
     description: null,
     imageUrl,
   };
 }
 
 export async function fetchImmoFrancoisFromApi(
-  _baseUrl: string
+  _baseUrl: string,
+  options?: { debug?: boolean }
 ): Promise<NormalizedListing[]> {
+  const debug = options?.debug ?? false;
   const results: NormalizedListing[] = [];
   let page = 1;
   let totalPages = 1;
@@ -91,20 +98,34 @@ export async function fetchImmoFrancoisFromApi(
     params.set("page", String(page));
     const url = `${API_BASE}?${params.toString()}`;
 
+    if (debug) console.error("[immo-francois-api] GET", url);
     const res = await fetch(url, {
       method: "GET",
       headers: {
         Accept: "application/json",
         "User-Agent":
-          "GhentImmoScraper/1.0 (Personal project; listing aggregator)",
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       },
     });
 
-    if (!res.ok) break;
+    if (debug) console.error("[immo-francois-api] status", res.status, res.statusText);
+    if (!res.ok) {
+      if (debug) {
+        const text = await res.text();
+        console.error("[immo-francois-api] body slice", text.slice(0, 400));
+      }
+      break;
+    }
 
     const json = (await res.json()) as ImmoFrancoisResponse;
     const estates = json.estates ?? [];
     totalPages = json.pages ?? 1;
+
+    if (debug) {
+      console.error("[immo-francois-api] pages", totalPages, "estates this page", estates.length);
+      if (estates.length === 0 && page === 1)
+        console.error("[immo-francois-api] raw keys", Object.keys(json), "body slice", JSON.stringify(json).slice(0, 500));
+    }
 
     for (const estate of estates) {
       const listing = estateToListing(estate);
@@ -115,5 +136,22 @@ export async function fetchImmoFrancoisFromApi(
     page += 1;
   } while (page <= totalPages);
 
+  if (debug) console.error("[immo-francois-api] total listings", results.length);
   return results;
+}
+
+/** Run directly: npx tsx lib/scraper/adapters/immofrancois-api.ts */
+async function main() {
+  const listings = await fetchImmoFrancoisFromApi("https://www.immofrancois.be", {
+    debug: true,
+  });
+  console.log("Listings:", listings.length);
+  console.log(JSON.stringify(listings.slice(0, 2), null, 2));
+}
+
+if (process.argv[1]?.includes("immofrancois-api")) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
 }

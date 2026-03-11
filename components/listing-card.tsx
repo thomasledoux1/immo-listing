@@ -14,7 +14,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Home, MapPin, Ruler, Trees, Trash2 } from 'lucide-react';
 
-type ListingRow = {
+export type ListingRow = {
   id: number;
   url: string;
   title: string;
@@ -23,6 +23,7 @@ type ListingRow = {
   livingSurfaceM2: number | null;
   hasGarden: boolean;
   municipality: string | null;
+  address: string | null;
   imageUrl: string | null;
   firstSeenAt: string;
   agencyName: string;
@@ -69,14 +70,16 @@ export function ListingCard({ listing }: { listing: ListingRow }) {
       </div>
       <CardHeader className="pb-2">
         <CardTitle className="line-clamp-2 text-lg">{listing.title}</CardTitle>
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-0.5 text-sm text-muted-foreground">
-          {listing.municipality && (
-            <span className="flex items-center gap-1">
+        <div className="flex flex-col gap-1.5 text-sm">
+          {(listing.address || listing.municipality) && (
+            <span className="flex items-center gap-1 text-muted-foreground">
               <MapPin className="size-3.5 shrink-0" />
-              {listing.municipality}
+              {listing.address ?? listing.municipality}
             </span>
           )}
-          <span>{listing.agencyName}</span>
+          <Badge variant="outline" className="w-fit font-medium text-foreground">
+            {listing.agencyName}
+          </Badge>
         </div>
       </CardHeader>
       <CardContent className="flex flex-wrap gap-2 pb-2">

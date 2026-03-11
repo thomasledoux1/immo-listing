@@ -82,10 +82,11 @@ function nodeToListing(node: EraPropertyNode, baseUrl: string): NormalizedListin
 
   const imageUrl = parseFirstImageSrc(teaser, baseUrl);
 
-  const municipality =
-    parseTeaserField(teaser, /field--(?:location|locality|city)[^>]*>([^<]+)</i)?.trim() ??
+  const address =
+    parseTeaserField(teaser, /field--(?:location|locality|city|address)[^>]*>([^<]+)</i)?.trim() ??
     parseTeaserField(teaser, /class="[^"]*location[^"]*"[^>]*>([^<]+)</i)?.trim() ??
-    "Gent";
+    null;
+  const municipality = address?.trim() ?? "Gent";
 
   return {
     externalId,
@@ -96,6 +97,7 @@ function nodeToListing(node: EraPropertyNode, baseUrl: string): NormalizedListin
     livingSurfaceM2: surfaceNum ?? null,
     hasGarden: true,
     municipality,
+    address: address ?? (title ? `${title}, ${municipality}` : municipality),
     description: null,
     imageUrl,
   };
@@ -115,8 +117,10 @@ function buildUrlWithOffset(customApiUrl: string, offset: number): string {
 
 export async function fetchEraFromApi(
   baseUrl: string,
-  customApiUrl?: string
+  customApiUrl?: string,
+  options?: { debug?: boolean }
 ): Promise<NormalizedListing[]> {
+  const debug = options?.debug ?? false;
   const results: NormalizedListing[] = [];
   let offset = 0;
   let totalCount: number | undefined;
@@ -127,18 +131,30 @@ export async function fetchEraFromApi(
       ? buildUrlWithOffset(customApiUrl, offset)
       : buildEraApiUrl(offset);
 
+    if (debug) console.error("[era-api] GET", url);
     const res = await fetch(url, {
       headers: {
         Accept: "application/json",
-        "User-Agent": "GhentImmoScraper/1.0 (Personal project; listing aggregator)",
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       },
     });
+    if (debug) console.error("[era-api] status", res.status, res.statusText);
     if (!res.ok) throw new Error(`ERA API ${res.status}: ${res.statusText}`);
 
     const json = (await res.json()) as EraApiResponse;
     const data = json.data ?? [];
     totalCount = json.meta?.totalCount;
     pageLength = data.length;
+
+    if (debug) {
+      console.error("[era-api] meta", JSON.stringify(json.meta));
+      console.error("[era-api] data.length", data.length);
+      if (data.length > 0)
+        console.error("[era-api] first node keys", Object.keys(data[0] ?? {}));
+      if (data.length === 0 && offset === 0)
+        console.error("[era-api] raw body slice", JSON.stringify(json).slice(0, 500));
+    }
 
     for (const node of data) {
       const listing = nodeToListing(node, baseUrl);
@@ -151,5 +167,23 @@ export async function fetchEraFromApi(
     (totalCount == null || offset < totalCount)
   );
 
+  if (debug) console.error("[era-api] total listings", results.length);
   return results;
+}
+
+/** Run directly: npx tsx lib/scraper/adapters/era-api.ts */
+async function main() {
+  const baseUrl = "https://www.era.be";
+  const apiUrl =
+    "https://www.era.be/nl/jsonapi/index/property_index?sort=broker--field_start_date&pager%5Boffset%5D=0&filter%5Bsale_or_rent%5D=sale&filter%5Bproperty_type%5D=46&filter%5Bprice%5D=%28min%3A450000%3Bmax%3A600000%29&filter%5Bamount_bedrooms%5D=%28min%3A3%3Bmax%3A%29&filter%5Bhabitable_area_m2%5D=%28min%3A160%3Bmax%3A%29&filter%5Boutside%5D=garden&filter%5Blocation%5D%5Bmunicipalities%5D=342&filter%5Blocation%5D%5Bsub_municipalities%5D=740+1104+1131+1298+1689+1808+1863+2066+2373+2380+2397+2631+2786+2828";
+  const listings = await fetchEraFromApi(baseUrl, apiUrl, { debug: true });
+  console.log("Listings:", listings.length);
+  console.log(JSON.stringify(listings.slice(0, 2), null, 2));
+}
+
+if (process.argv[1]?.includes("era-api")) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
 }

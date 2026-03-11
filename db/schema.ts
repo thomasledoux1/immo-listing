@@ -23,6 +23,7 @@ export const listings = sqliteTable(
     livingSurfaceM2: real("living_surface_m2"),
     hasGarden: integer("has_garden", { mode: "boolean" }).notNull(),
     municipality: text("municipality"),
+    address: text("address"),
     description: text("description"),
     imageUrl: text("image_url"),
     firstSeenAt: text("first_seen_at").notNull(),

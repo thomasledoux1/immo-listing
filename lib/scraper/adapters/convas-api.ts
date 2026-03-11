@@ -90,6 +90,9 @@ function resultToListing(
 
   const listingUrl = `${baseUrl}/nl/aanbod/${result.id}`;
 
+  const municipality = 'Gent';
+  const address = title ? `${title}, ${municipality}` : municipality;
+
   return {
     externalId: String(result.id),
     url: listingUrl,
@@ -98,7 +101,8 @@ function resultToListing(
     bedrooms: g.bedroomCount ?? null,
     livingSurfaceM2: areaBuild ?? null,
     hasGarden: areaGround > 0,
-    municipality: 'Gent',
+    municipality,
+    address,
     description: null,
     imageUrl: firstPic ?? null,
   };

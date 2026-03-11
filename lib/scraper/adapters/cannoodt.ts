@@ -74,12 +74,17 @@ export async function scrapeCannoodt(
       const imageUrl = imgMatch ? imgMatch[1].trim() : null;
 
       let municipality: string | null = null;
+      let address: string | null = null;
+      const adresEl = el.querySelector(".field-name-field-pand-adres .field-item, .field-name-field-adres .field-item");
       const locEl = el.querySelector(".field-name-field-pand-gemeente .field-item, .field-name-field-locatie .field-item, [class*='location'] .field-item, [class*='gemeente']");
       if (locEl) municipality = (locEl.textContent ?? "").trim() || null;
+      if (adresEl) address = (adresEl.textContent ?? "").trim() || null;
       if (!municipality && title) {
         const postalMatch = title.match(/\b(9\d{3})\s+([A-Za-z\-]+(?:\s+[A-Za-z\-]+)*)/);
         if (postalMatch) municipality = postalMatch[2].trim();
       }
+      if (!address && (title || municipality))
+        address = [title, municipality].filter(Boolean).join(", ");
 
       return {
         title,
@@ -89,6 +94,7 @@ export async function scrapeCannoodt(
         hasGarden,
         imageUrl,
         municipality,
+        address,
       };
     });
 
@@ -110,6 +116,7 @@ export async function scrapeCannoodt(
       livingSurfaceM2: data.livingSurfaceM2,
       hasGarden: data.hasGarden,
       municipality: data.municipality ?? "Gent",
+      address: data.address ?? null,
       description: null,
       imageUrl,
     });

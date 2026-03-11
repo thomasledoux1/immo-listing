@@ -8,9 +8,11 @@
     "start": "next start",
     "lint": "eslint",
     "db:generate": "drizzle-kit generate",
-    "db:push": "drizzle-kit push",
+    "db:push": "dotenv -e .env -- drizzle-kit push",
     "db:studio": "drizzle-kit studio",
-    "scrape": "tsx scripts/scrape.ts"
+    "scrape": "dotenv -e .env -- tsx scripts/scrape.ts",
+    "seed-agencies": "dotenv -e .env -- npx tsx scripts/seed-agencies.ts",
+    "dedupe-listings": "dotenv -e .env -- npx tsx scripts/dedupe-listings-by-address.ts"
   },
   "dependencies": {
     "@libsql/client": "^0.17.0",
@@ -34,6 +36,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv-cli": "^11.0.0",
     "drizzle-kit": "^0.31.9",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",

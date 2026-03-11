@@ -1,4 +1,4 @@
-import { and, eq, gte, isNull, lte, or, sql } from 'drizzle-orm';
+import { and, desc, eq, gte, isNull, lte, or, sql } from 'drizzle-orm';
 import { db } from '@/db';
 import { agencies, listings } from '@/db/schema';
 import {
@@ -32,6 +32,7 @@ export async function getListings() {
       livingSurfaceM2: listings.livingSurfaceM2,
       hasGarden: listings.hasGarden,
       municipality: listings.municipality,
+      address: listings.address,
       imageUrl: listings.imageUrl,
       firstSeenAt: listings.firstSeenAt,
       agencyName: agencies.name,
@@ -42,14 +43,14 @@ export async function getListings() {
     .where(
       and(
         isNull(listings.deletedAt),
-        municipalityCondition,
+        // municipalityCondition,
         gte(listings.price, PRICE_MIN),
         lte(listings.price, PRICE_MAX),
         or(isNull(listings.bedrooms), gte(listings.bedrooms, 3)),
-        ...notNonHouseConditions,
+        // ...notNonHouseConditions,
       ),
     )
-    .orderBy(sql`${listings.firstSeenAt} desc`);
+    .orderBy(desc(listings.firstSeenAt), desc(listings.id));
 
   return rows;
 }

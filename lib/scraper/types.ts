@@ -8,6 +8,8 @@ export interface NormalizedListing {
   hasGarden: boolean;
   /** Municipality / city (e.g. "Gent", "Sint-Amandsberg") when known */
   municipality?: string | null;
+  /** Full or street address for deduplication when same property listed by multiple agencies */
+  address?: string | null;
   description: string | null;
   imageUrl: string | null;
 }
@@ -21,6 +23,8 @@ export interface ScraperConfig {
   topVastgoedApi?: boolean;
   /** When true, fetch from Immo Francois SweepBright API (GET); no browser needed */
   immoFrancoisApi?: boolean;
+  /** When true, load Immoscoop search page in browser, wait 10s, scrape HTML (listingsUrl = search page URL or default) */
+  immoscoopApi?: boolean;
   /** Single URL (used when listingsUrls not set) */
   listingsUrl?: string;
   /** Multiple URLs to scrape (e.g. one per city); merged and deduped */
