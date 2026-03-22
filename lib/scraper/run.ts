@@ -12,6 +12,7 @@ import { fetchConvasFromApi } from './adapters/convas-api';
 import { fetchEraFromApi } from './adapters/era-api';
 import { scrapeEra } from './adapters/era';
 import { scrapeGeneric } from './adapters/generic';
+import { scrapeDewaele } from './adapters/dewaele';
 import { scrapeImmoweb } from './adapters/immoweb';
 import { scrapeZimmo } from './adapters/zimmo';
 import { fetchImmoFrancoisFromApi } from './adapters/immofrancois-api';
@@ -50,6 +51,7 @@ function selectAdapter(
   if (slug.includes('oranjeberg') || url.includes('oranjeberg.be'))
     return scrapeOranjeberg;
   if (slug.includes('trevi') || url.includes('trevi.be')) return scrapeTrevi;
+  if (slug.includes('dewaele') || url.includes('dewaele.com')) return scrapeDewaele;
   if (slug.includes('era') || url.includes('era.be')) return scrapeEra;
   if (slug.includes('immoweb') || url.includes('immoweb.be')) return scrapeImmoweb;
   if (slug.includes('zimmo') || url.includes('zimmo.be')) return scrapeZimmo;

@@ -182,7 +182,10 @@ function extractAddressFromDetailHtml(html: string): string | null {
     /classified__information--address-row[\s\S]*?>([\s\S]*?)<\/div>/i,
   );
   if (!match?.[1]) return null;
-  const raw = match[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  const raw = match[1]
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
   return raw.length > 0 ? raw : null;
 }
 
@@ -258,7 +261,10 @@ export function parseImmowebHtml(
       const municipality = locality
         ? locality.replace(/^\d+\s*/, '').trim()
         : 'Onbekend';
-      const address = [locality, postalCode].filter(Boolean).join(' ').trim() || municipality || null;
+      const address =
+        [locality, postalCode].filter(Boolean).join(' ').trim() ||
+        municipality ||
+        null;
       const title = c.property?.title ?? 'House';
       const bedrooms = c.property?.bedroomCount ?? null;
       const surface = c.property?.netHabitableSurface ?? null;
@@ -290,7 +296,7 @@ export function parseImmowebHtml(
     const municipality = card.localityText
       ? card.localityText.replace(/^\d+\s*/, '').trim()
       : 'Onbekend';
-    const address = (card.localityText?.trim()) || municipality || null;
+    const address = card.localityText?.trim() || municipality || null;
     results.push({
       externalId: card.externalId,
       url: card.url,
@@ -325,7 +331,7 @@ export async function scrapeImmoweb(
     await page.setViewportSize({ width: 1280, height: 720 });
     await page.goto(listingsUrl, {
       waitUntil: 'load',
-      timeout: 30000,
+      timeout: 120000,
     });
     await page
       .waitForSelector('article.card--result, iw-search-card-rendered', {
@@ -349,10 +355,13 @@ export async function scrapeImmoweb(
   for (let i = 0; i < results.length; i++) {
     const listing = results[i];
     if (!listing?.url) continue;
-    const address = await fetchAddressFromDetailPage(listing.url, page ?? undefined);
+    const address = await fetchAddressFromDetailPage(
+      listing.url,
+      page ?? undefined,
+    );
     listing.address = address ?? null;
     if (i < results.length - 1) {
-      await new Promise((r) => setTimeout(r, 600));
+      await new Promise(r => setTimeout(r, 600));
     }
   }
 

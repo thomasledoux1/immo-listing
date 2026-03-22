@@ -148,4 +148,13 @@ export const AGENCIES: AgencyConfig[] = [
       listingsUrl: IMMOSCOOP_SEARCH_URL,
     },
   },
+  {
+    name: 'Dewaele',
+    slug: 'dewaele',
+    websiteUrl: 'https://www.dewaele.com',
+    scraperConfig: {
+      listingsUrl:
+        'https://www.dewaele.com/nl/te-koop/alle?filter%5Bcity_ids%5D%5B%5D=2476&filter%5Bcity_ids%5D%5B%5D=3348&filter%5Bcity_ids%5D%5B%5D=3349&filter%5Bcity_ids%5D%5B%5D=3400&filter%5Bcity_ids%5D%5B%5D=3412&filter%5Bstatuses%5D%5B%5D=Te+koop&filter%5Btypes%5D%5B%5D=Huis&filter%5Bprice%5D%5Bmin%5D=450000&filter%5Bprice%5D%5Bmax%5D=600000&filter%5Bbedrooms%5D%5Bmin%5D=&filter%5Bbedrooms%5D%5Bmax%5D=&filter%5Bsurface_built%5D%5Bmin%5D=&filter%5Bsurface_built%5D%5Bmax%5D=&filter%5Bsurface_plot%5D%5Bmin%5D=&filter%5Bsurface_plot%5D%5Bmax%5D=&filter%5Bsurface_livable%5D%5Bmin%5D=&filter%5Bsurface_livable%5D%5Bmax%5D=&filter%5Bsurface_trading%5D%5Bmin%5D=&filter%5Bsurface_trading%5D%5Bmax%5D=&filter%5Bsurface_office%5D%5Bmin%5D=&filter%5Bsurface_office%5D%5Bmax%5D=&filter%5Bsurface_storage%5D%5Bmin%5D=&filter%5Bsurface_storage%5D%5Bmax%5D=&filter%5Bbathrooms%5D%5Bmin%5D=&filter%5Bbathrooms%5D%5Bmax%5D=&filter%5Bparking_spots%5D%5Bmin%5D=&filter%5Bparking_spots%5D%5Bmax%5D=&filter%5Bgarden%5D=&filter%5Bterrace%5D=&filter%5Bground_floor%5D=&filter%5Bfloor%5D%5Bmin%5D=&filter%5Bfloor%5D%5Bmax%5D=&filter%5Bsea_view%5D=&filter%5Bgarage%5D=&filter%5Bswimming_pool%5D=&filter%5Belevator%5D=&filter%5Bbike_storage%5D=&filter%5Bfurnished%5D=&filter%5Bsurface_terrace%5D%5Bmin%5D=&filter%5Bsurface_terrace%5D%5Bmax%5D=&filter%5Bloading_docks%5D%5Bmin%5D=&filter%5Bloading_docks%5D%5Bmax%5D=&filter%5Bfree_height%5D%5Bmin%5D=&filter%5Bfree_height%5D%5Bmax%5D=&filter%5Bkva%5D%5Bmin%5D=&filter%5Bkva%5D%5Bmax%5D=&filter%5Blight_street%5D=&filter%5Brolling_bridge%5D=&filter%5Brented%5D=',
+    },
+  },
 ];

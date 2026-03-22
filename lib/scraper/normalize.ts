@@ -89,6 +89,7 @@ export function isSoldOrRentedFromText(text: string | null | undefined): boolean
   const lower = text.toLowerCase();
   return (
     lower.includes("verkocht") ||
+    lower.includes("waarschijnlijk verkocht") ||
     lower.includes("sold") ||
     lower.includes("verhuurd") ||
     lower.includes("rented") ||
