@@ -149,6 +149,15 @@ export const AGENCIES: AgencyConfig[] = [
     },
   },
   {
+    name: 'Axel Lenaerts',
+    slug: 'axel-lenaerts',
+    websiteUrl: 'https://www.axellenaerts.be',
+    scraperConfig: {
+      listingsUrl:
+        'https://www.axellenaerts.be/nl/kopen?pg=1&mapsView=false&state=56&type=491&order=postdate_desc&regions=gent-de-pinte&zips=&maxbudget=650000',
+    },
+  },
+  {
     name: 'Dewaele',
     slug: 'dewaele',
     websiteUrl: 'https://www.dewaele.com',

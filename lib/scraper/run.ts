@@ -18,9 +18,7 @@ import { scrapeZimmo } from './adapters/zimmo';
 import { fetchImmoFrancoisFromApi } from './adapters/immofrancois-api';
 import { fetchTopVastgoedFromApi } from './adapters/topvastgoed-api';
 import { fetchImmoscoopFromApi } from './adapters/immoscoop-api';
-
-const USER_AGENT =
-  'GhentImmoScraper/1.0 (Personal project; listing aggregator for Ghent area)';
+import { scrapeAxelLenaerts } from './adapters/axel-lenaerts';
 
 function getBaseUrl(websiteUrl: string): string {
   try {
@@ -55,6 +53,8 @@ function selectAdapter(
   if (slug.includes('era') || url.includes('era.be')) return scrapeEra;
   if (slug.includes('immoweb') || url.includes('immoweb.be')) return scrapeImmoweb;
   if (slug.includes('zimmo') || url.includes('zimmo.be')) return scrapeZimmo;
+  if (slug.includes('axel-lenaerts') || url.includes('axellenaerts.be'))
+    return scrapeAxelLenaerts;
   return scrapeGeneric;
 }
 
@@ -125,7 +125,10 @@ export async function runScraperForAgency(
     const adapter = selectAdapter(agency);
     const seenUrls = new Set<string>();
     try {
-      await page.setExtraHTTPHeaders({ 'User-Agent': USER_AGENT });
+      if (page.isClosed()) {
+        return { added: 0, updated: 0 };
+      }
+      /** Use context User-Agent from scrape.ts; overriding with a custom UA breaks some Vue sites. */
       for (const url of urlsToScrape) {
         const pageResults = await adapter(
           page,
